@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1:1 सेशन · @mahabharat.retold</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="tag">@mahabharat.retold · 1:1 सेशन</div>
+  <h1>बिना झंझट, बिना सब्सक्रिप्शन — मेरे साथ सेटअप करें</h1>
+  <p>Claude Code एक पेड सब्सक्रिप्शन है। अगर आप फ़्री तरीके से एनिमेटेड रील बनाना चाहते हैं, और जटिल सेटअप में नहीं उलझना चाहते — तो मेरे साथ 30 मिनट का पर्सनल Google Meet सेशन बुक करें।</p>
+  <div class="card">
+    <h2>सेशन में क्या मिलेगा</h2>
+    <ul>
+      <li>फ़्री टूल्स वाला पूरा तरीका — कोई सब्सक्रिप्शन नहीं</li>
+      <li>आपके कंप्यूटर पर लाइव सेटअप, स्क्रीन शेयर करके</li>
+      <li>आपकी पहली रील की स्क्रिप्ट और सीन-प्लान पर बात</li>
+      <li>आपके हर सवाल का जवाब</li>
+    </ul>
+  </div>
+  <div class="card price"><span>30 मिनट · Google Meet<br><small style="opacity:.75">रोज़ 3–5 बजे (IST) में अपना समय चुनें</small></span><b>₹500</b></div>
+  <a class="btn" id="pay" href="#">₹500 पे करें और समय चुनें</a>
+  <p class="small" id="note">पेमेंट होते ही आप सीधे कैलेंडर पर पहुँचेंगे — वहाँ अपना समय चुनें, Google Meet लिंक ईमेल पर आ जाएगा।</p>
+  <div class="small">सवाल हो तो Instagram पर DM करें — <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div>
+  <div class="legal"><a href="terms.html">Terms</a>·<a href="privacy.html">Privacy</a>·<a href="refund.html">Refund</a>·<a href="contact.html">Contact</a></div>
+</main>
+<script>
+  // Razorpay payment page link goes here once the account is approved. After payment, Razorpay redirects to the Calendly link.
+  const PAY_URL = "";
+  const a = document.getElementById("pay");
+  if (PAY_URL) { a.href = PAY_URL; }
+  else { a.removeAttribute("href"); a.style.opacity = .55; a.style.cursor = "default";
+         a.textContent = "बुकिंग जल्द शुरू होगी"; document.getElementById("note").textContent = "पेमेंट जल्द शुरू होगा। तब तक Instagram पर DM करें।"; }
+</script>
+</body>
+</html>
