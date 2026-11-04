@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Thank you · @mahabharat.retold</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="tag">@mahabharat.retold</div>
+  <h1 id="title">Checking your payment…</h1>
+  <p class="lead" id="msg">This takes a few seconds. Please keep this page open.</p>
+  <div id="actions"></div>
+  <div class="small">Questions? DM us on Instagram: <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div>
+</main>
+<script src="config.js"></script>
+<script>
+(function () {
+  const S = window.SHOP, $ = (id) => document.getElementById(id);
+  const ref = new URLSearchParams(location.search).get("ref") || "";
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  let pdfUrl = null, pdfName = "guide.pdf";
+
+  function show(title, html, actions) { $("title").textContent = title; $("msg").innerHTML = html; $("actions").innerHTML = actions || ""; }
+
+  async function getPdf() {
+    if (pdfUrl) return pdfUrl;
+    const d = await (await fetch(S.api + "?action=download&ref=" + encodeURIComponent(ref))).json();
+    if (!d.data) throw new Error(d.error || "Download not available.");
+    const bin = atob(d.data), bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    pdfUrl = URL.createObjectURL(new Blob([bytes], { type: d.type || "application/pdf" }));
+    pdfName = d.name || pdfName;
+    return pdfUrl;
+  }
+  function save(url) {
+    const a = document.createElement("a"); a.href = url; a.download = pdfName; document.body.appendChild(a); a.click(); a.remove();
+  }
+
+  async function guideReady(st) {
+    show("Payment received 🙏", "Your guide is downloading. A copy has also been emailed to <b>" + esc(st.email) + "</b>.",
+      '<button class="btn" id="dl">⬇ Download the PDF</button><a class="btn alt" id="open" target="_blank" rel="noopener">Open the PDF</a>' +
+      '<p class="note">Using Instagram\'s browser and the download doesn\'t start? Tap ••• and choose "Open in browser", or use the copy in your email.</p>' +
+      '<a class="btn alt" href="session.html">🎥 Want help? Book a 1:1 Reel Mentorship</a>');
+    $("dl").disabled = true; $("dl").textContent = "Preparing your download…";
+    try {
+      const url = await getPdf();
+      $("open").href = url;
+      $("dl").disabled = false; $("dl").textContent = "⬇ Download the PDF";
+      $("dl").onclick = () => save(url);
+      save(url);
+    } catch (x) {
+      $("dl").textContent = "Download not available here"; $("msg").innerHTML += "<br>" + esc(x.message) + " Your copy is in your email.";
+    }
+  }
+
+  async function check(tries) {
+    if (!ref) return show("Nothing to show", "This page opens after a payment.", '<a class="btn" href="index.html">Go to the guide</a>');
+    try {
+      const st = await (await fetch(S.api + "?action=status&ref=" + encodeURIComponent(ref))).json();
+      if (st.error) throw new Error(st.error);
+      if (st.status === "confirmed" && st.kind === "guide") return guideReady(st);
+      if (st.status === "confirmed") return show("Your session is confirmed 🙏", "See you on <b>" + esc(st.when) + "</b>.<br>The Google Meet link and a calendar invite have been sent to <b>" + esc(st.email) + "</b>.", '<a class="btn alt" href="index.html">Back to the guide page</a>');
+      if (st.status === "pending" && tries > 0) return setTimeout(() => check(tries - 1), 4000);
+      if (st.status === "pending") return show("Waiting for the payment", "We haven't received the payment yet. If you paid, it is usually confirmed within a few minutes and you'll get an email.", '<button class="btn" onclick="location.reload()">Check again</button>');
+      show("Payment not completed", "This payment link has expired" + (st.kind === "session" ? " and the slot was released" : "") + ". Please try again.", '<a class="btn" href="' + (st.kind === "session" ? "session.html" : "index.html") + '">Try again</a>');
+    } catch (x) {
+      if (tries > 0) return setTimeout(() => check(tries - 1), 4000);
+      show("Something went wrong", esc(x.message) + " If you paid, you'll still get an email. DM us on Instagram if it doesn't arrive.", "");
+    }
+  }
+  check(6);
+})();
+</script>
+</body>
+</html>
