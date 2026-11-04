@@ -1,32 +1,105 @@
 <!doctype html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>1:1 सेशन · @mahabharat.retold</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<title>1:1 Reel Mentorship · @mahabharat.retold</title>
+<meta name="description" content="Book a 1:1 Reel Mentorship on Google Meet with @mahabharat.retold. ₹599, pay to confirm your slot.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <div class="tag">@mahabharat.retold · 1:1 Reel Mentorship</div>
-  <h1>Claude सब्सक्रिप्शन की चिंता छोड़िए — मैं आपके साथ रील बनाऊँगा</h1>
-  <p>Claude Code एक पेड सब्सक्रिप्शन है। उसकी ज़रूरत नहीं — मेरे पास एक दूसरा सेटअप है जो फ़्री टूल्स से चलता है। मैं ख़ुद आपको सब सिखाऊँगा।</p>
+  <div class="tag">@mahabharat.retold</div>
+  <h1>1:1 Reel Mentorship</h1>
+  <p class="lead">No Claude subscription needed: I set you up with free tools and teach you every step, live on Google Meet.</p>
+
   <div class="card">
-    <h2>आपको क्या मिलेगा</h2>
+    <h2>What you get</h2>
     <ul>
-      <li>पूरा सेटअप — बिना Claude सब्सक्रिप्शन के, फ़्री टूल्स से</li>
-      <li>मेरे साथ मिलकर <b>5 रील</b> बनाएँगे — हर स्टेप सिखाते हुए</li>
-      <li>तब तक सपोर्ट, जब तक आप ख़ुद <b>5–10 रील</b> बनाकर आत्मविश्वास से अपने पैरों पर खड़े न हो जाएँ</li>
-      <li>1:1 Google Meet सेशन — रोज़ 3–5 बजे (IST) में अपना समय चुनें</li>
+      <li>I set everything up with you and teach you every step</li>
+      <li>We make <b>5 reels</b> together</li>
+      <li>Support until you can make <b>5–10 reels</b> on your own, with confidence</li>
     </ul>
+    <div class="price" style="margin-top:14px"><b>₹599</b></div>
+    <p class="offer">One-time payment · Google Meet · 30-minute sessions, 4:00–5:00 PM IST</p>
   </div>
-  <div class="card price"><span>1:1 Reel Mentorship<br><small style="opacity:.75">एक बार का पेमेंट</small></span><b>₹299</b></div>
-  <a class="btn" id="pay" href="https://pages.razorpay.com/reel-mentorship">₹299 पे करें → फिर समय चुनें</a>
-  <a class="btn alt" href="https://calendly.com/sahil-suman9939/30min">पहले समय चुनें → फिर पे करें</a>
-  <p class="small">पहले पे किया? पेमेंट होते ही आप सीधे कैलेंडर पर पहुँचेंगे।<br>पहले समय चुना? बुकिंग के बाद <a href="https://pages.razorpay.com/reel-mentorship">यहाँ ₹299 पे करें</a> — सेशन पेमेंट के बाद ही पक्का होगा।</p>
-  <div class="small">सवाल हो तो Instagram पर DM करें — <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div>
+
+  <div class="card">
+    <h2>1. Pick a day and time (IST)</h2>
+    <div class="days" id="days"><span class="note">Loading free slots…</span></div>
+    <div class="slots" id="slots"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Your details</h2>
+    <form id="form" novalidate>
+      <label for="name">Your name</label><input id="name" autocomplete="name" required>
+      <label for="email">Email (the Meet link is sent here)</label><input id="email" type="email" autocomplete="email" required>
+      <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
+      <button class="btn" id="pay" type="submit" disabled>Pick a slot first</button>
+      <div class="err" id="err"></div>
+      <p class="note">Your slot is held for 20 minutes while you pay, and <b>confirmed only after the payment</b>. You then get the Google Meet link and a calendar invite by email. Already a mentee? DM us on Instagram to book your next session.</p>
+    </form>
+  </div>
+
+  <div class="small">Questions? DM us on Instagram: <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div>
   <div class="legal"><a href="terms.html">Terms</a>·<a href="privacy.html">Privacy</a>·<a href="refund.html">Refund</a>·<a href="contact.html">Contact</a></div>
 </main>
+<script src="config.js"></script>
+<script>
+(function () {
+  const S = window.SHOP, $ = (id) => document.getElementById(id);
+  let days = [], day = null, slot = null;
+  function payLabel() {
+    $("pay").disabled = !slot;
+    $("pay").textContent = slot ? "Pay ₹" + S.sessionPrice + " and confirm " + slot.label + ", " + day.label : "Pick a slot first";
+  }
+  function showSlots() {
+    $("slots").innerHTML = "";
+    day.slots.forEach((s) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "slot" + (slot && slot.start === s.start ? " on" : "");
+      b.textContent = s.label; b.disabled = !s.free;
+      b.onclick = () => { slot = s; showSlots(); payLabel(); };
+      $("slots").appendChild(b);
+    });
+  }
+  function showDays() {
+    $("days").innerHTML = "";
+    days.forEach((d) => {
+      const free = d.slots.some((s) => s.free);
+      const [w, n, m] = d.label.split(" ");
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "day" + (d === day ? " on" : "") + (free ? "" : " full");
+      b.innerHTML = w + "<b>" + n + "</b>" + m;
+      b.onclick = () => { day = d; slot = null; showDays(); showSlots(); payLabel(); };
+      $("days").appendChild(b);
+      if (d === day) requestAnimationFrame(() => b.scrollIntoView({ block: "nearest", inline: "nearest" }));
+    });
+  }
+  function load() {
+    fetch(S.api + "?action=slots").then((r) => r.json()).then((d) => {
+      if (!d.days) throw new Error(d.error || "Could not load the slots.");
+      days = d.days; day = days.find((x) => x.slots.some((s) => s.free)) || days[0]; slot = null;
+      showDays(); showSlots(); payLabel();
+    }).catch((x) => { $("days").innerHTML = '<span class="note">' + x.message + " Please refresh the page.</span>"; });
+  }
+  load();
+  $("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!slot) return;
+    $("err").textContent = ""; $("pay").disabled = true; $("pay").textContent = "Holding your slot…";
+    try {
+      const r = await fetch(S.api, { method: "POST", body: JSON.stringify({ action: "book", start: slot.start, name: $("name").value, email: $("email").value, phone: $("phone").value }) });
+      const d = await r.json();
+      if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
+      location.href = d.url;
+    } catch (x) {
+      $("err").textContent = x.message; load();
+    }
+  });
+})();
+</script>
 </body>
 </html>
