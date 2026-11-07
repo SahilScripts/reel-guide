@@ -1,0 +1,1092 @@
+{
+ "title": "Shri Ram and the dog",
+ "series": "UNTOLD RAMAYAN · 01",
+ "follow_at": 26.77,
+ "sentences": [
+  "श्रीराम के दरबार में एक बार, एक कुत्ता न्याय माँगने आया।",
+  "श्रीराम का फ़ैसला सुनकर पूरी सभा हैरान रह गई, क्योंकि अपराधी को सज़ा नहीं, इनाम मिला।",
+  "पर जब कुत्ते का राज़ खुला, तो पता चला कि वो इनाम ही सबसे बड़ी सज़ा थी।",
+  "एक सुबह श्रीराम ने लक्ष्मण को भेजा, \"देखो, कोई फ़रियादी तो नहीं?\"",
+  "लक्ष्मण लौटे, \"कोई नहीं भैया। आपके राज्य में किसी को शिकायत ही नहीं।\"",
+  "\"एक बार फिर देखो।\"",
+  "इस बार द्वार पर एक कुत्ता खड़ा था। सिर फटा हुआ, खून बहता हुआ।",
+  "पर वो भीतर नहीं आया। बोला, \"राजा का महल देवताओं का घर है। बिना आज्ञा मैं अंदर नहीं आऊँगा।\"",
+  "श्रीराम ने उसे बुलवाया।",
+  "कुत्ते ने कहा, \"सर्वार्थसिद्ध नाम के एक भिक्षु ने, बिना कारण, मुझे डंडे से मारा है।\"",
+  "भिक्षु आया, और उसने सच मान लिया।",
+  "\"मैं भूखा था। ये रास्ते में खड़ा था, हटा नहीं, तो गुस्से में मार दिया। राजन, मुझे दंड दीजिए।\"",
+  "पर ऋषि बोले, \"शास्त्रों के अनुसार, ब्राह्मण को प्राणदंड नहीं दिया जा सकता।\"",
+  "तभी कुत्ता बोला, \"प्रभु, आपने मुझे वर देने का वचन दिया था। तो इसे कालिंजर मठ का कुलपति बना दीजिए।\"",
+  "श्रीराम ने वही किया।",
+  "और भिक्षु, हाथी पर बैठकर, शान से विदा हुआ।",
+  "मंत्री हैरान, \"प्रभु, ये तो सज़ा नहीं, वरदान है!\"",
+  "श्रीराम मुस्कुराए, \"तुम कर्म की गति नहीं जानते। ये कुत्ता जानता है।\"",
+  "तब कुत्ते ने राज़ खोला।",
+  "\"पिछले जन्म में, मैं ही कालिंजर मठ का कुलपति था।\"",
+  "\"मैंने पूजा भी की, सेवा भी की, मठ के धन की पाई-पाई संभाली।\"",
+  "\"फिर भी, आज इस हाल में हूँ।\"",
+  "\"और ये तो क्रोधी है। ये अपनी कई पीढ़ियों को साथ ले डूबेगा।\"",
+  "फिर वो कुत्ता काशी गया, और वहीं अन्न-जल त्याग दिया।",
+  "तो अगली बार कोई पद मिले, तो याद रखना। वो इनाम नहीं, इम्तिहान है।",
+  "रामायण की ऐसी ही अनसुनी कथाओं के लिए, फ़ॉलो करो।"
+ ],
+ "pictures": [
+  {
+   "id": "set_court",
+   "type": "set",
+   "what": "Ram's royal court in Ayodhya, the dais empty",
+   "prompt": "The royal court (darbar) of Ayodhya in the morning: a grand hall of carved sandstone and white marble pillars with red and gold silk drapes, brass oil lamps on stands, a raised three-step dais at the back centre that is EMPTY (no throne, no seat on it), a polished patterned marble floor, warm morning sunlight streaming in through tall arches. Symmetric, centred, deep perspective."
+  },
+  {
+   "id": "ram_throne",
+   "type": "character",
+   "what": "Shri Ram on his throne, facing us",
+   "prompt": "Shri Ram seated on an ornate golden royal throne (simhasan) with lion-head armrests and a small footstool, facing the viewer: dark blue-grey (shyam) complexion, calm compassionate half smile, tall golden crown, long black hair, vermilion tilak, pearl and gold necklaces, yellow silk pitambar dhoti with a red and gold angavastram, his right hand raised a little in a gentle 'speak' gesture, left hand on the armrest, a tall bow leaning against the throne. Show the whole throne."
+  },
+  {
+   "id": "ministers",
+   "type": "character",
+   "what": "two ministers, surprised",
+   "prompt": "Two royal ministers of Ayodhya standing side by side in rich silk robes and jewelled turbans, both astonished: one with both hands raised in surprise, the other leaning in with a hand beside his mouth; three-quarter view facing LEFT."
+  },
+  {
+   "id": "dog_gate",
+   "type": "character",
+   "what": "the wounded dog standing, facing left",
+   "prompt": "An Indian street dog (desi pariah dog) with a short tan-fawn coat, lean body and upright ears, standing on all four legs in side view facing LEFT, head slightly lowered, a fresh wound on the top of its head with a little blood trickling down its forehead, sad but dignified eyes. Natural dog anatomy. A plain stray dog: NO collar, no necklace, no jewellery, no ornaments of any kind."
+  },
+  {
+   "id": "monk_confess",
+   "type": "character",
+   "what": "the mendicant confessing, hands joined",
+   "prompt": "The SAME mendicant Sarvarthasiddha as before (same face, shaved head with tuft, ochre clothes, begging bowl), now standing before a king with his head bowed and palms joined in confession, the staff resting against his shoulder, ashamed but honest expression, three-quarter view facing RIGHT."
+  },
+  {
+   "id": "dog_sit",
+   "type": "character",
+   "what": "the dog sitting, facing right",
+   "prompt": "The SAME tan Indian street dog as in the earlier picture (same coat, same face, same wound on top of its head), now sitting upright in three-quarter view facing RIGHT and looking up, as if at a king on a high throne, calm dignified expression. A plain stray dog: NO collar, no necklace, no jewellery, no ornaments of any kind."
+  },
+  {
+   "id": "kulapati",
+   "type": "character",
+   "what": "the old kulapati with a ledger",
+   "prompt": "The head (kulapati) of an ancient Hindu monastery: a dignified middle-aged man with a short greying beard, saffron robes, rudraksha beads, a ring of heavy brass keys at his waist and a palm-leaf ledger in his hands, standing upright facing the viewer, gentle but burdened expression."
+  },
+  {
+   "id": "lakshman",
+   "type": "character",
+   "what": "Lakshman walking, facing right",
+   "prompt": "Lakshman, Shri Ram's younger brother, standing in three-quarter view facing RIGHT: fair complexion, golden crown, red-orange dhoti and a green angavastram, a bow over his shoulder and a quiver of arrows on his back, his right hand held out palm-up as if reporting 'there is no one', alert and loyal expression."
+  },
+  {
+   "id": "set_gate",
+   "type": "set",
+   "what": "the palace gate with steps",
+   "prompt": "The giant carved wooden main gate of Ayodhya's royal palace seen from outside at sunrise: a tall arched doorway with bronze studs and the doors slightly open, marigold garlands (toran) above, wide stone steps leading up to it, sandstone palace walls with jharokha windows, an empty stone courtyard in front."
+  },
+  {
+   "id": "set_street",
+   "type": "set",
+   "what": "a sunny Ayodhya street",
+   "prompt": "A narrow street of ancient Ayodhya at noon: whitewashed and ochre houses with carved wooden balconies, a stone well, a few scattered marigold petals, harsh midday sun and short shadows, a dusty stone path running into the distance."
+  },
+  {
+   "id": "monk_angry",
+   "type": "character",
+   "what": "the mendicant raising his staff",
+   "prompt": "Sarvarthasiddha, a thin middle-aged Brahmin mendicant (bhikshu): shaved head with a small tuft (shikha), sacred thread across the chest, a plain ochre-saffron dhoti and shawl, a wooden begging bowl hanging at his waist, holding a long wooden staff raised high in his right hand mid-swing, an angry hungry scowl, standing in three-quarter view facing LEFT."
+  },
+  {
+   "id": "sages",
+   "type": "character",
+   "what": "three sages",
+   "prompt": "Three elderly rishis standing close together (Vasishtha in the middle, Bhrigu and Kashyapa beside him): long white beards, matted hair tied in buns, saffron and white robes, rudraksha malas, wooden staffs; the middle sage raises his right palm in a firm 'no' gesture; serious faces, turned slightly to the LEFT."
+  },
+  {
+   "id": "set_kalinjar",
+   "type": "set",
+   "what": "Kalinjar fort and monastery on a hill",
+   "prompt": "A great ancient hill monastery (math) on the flat top of a rocky plateau in Bundelkhand (Kalinjar): stone temples, high walls and saffron flags on the clifftop, a long stone stairway climbing up the cliff, plains far below, golden late-afternoon light, a few birds."
+  },
+  {
+   "id": "monk_elephant",
+   "type": "character",
+   "what": "the mendicant riding a royal elephant",
+   "prompt": "The SAME mendicant Sarvarthasiddha as before, now seated proudly in a howdah on a richly decorated royal elephant (gold-embroidered red cloth, ornamental head piece, bells), the elephant walking in side view toward the RIGHT, the mendicant holding his staff with a pleased, smug smile."
+  },
+  {
+   "id": "set_treasury",
+   "type": "set",
+   "what": "the monastery treasury with lamps",
+   "prompt": "The treasury room of an ancient Hindu monastery at night: carved wooden chests overflowing with gold coins and jewels, brass vessels, stacks of palm-leaf ledgers on a low desk, a single brass oil lamp casting warm light, deep shadows on carved stone walls."
+  },
+  {
+   "id": "set_kashi",
+   "type": "set",
+   "what": "the Kashi ghats at dusk",
+   "prompt": "The ghats of Kashi (Varanasi) on the Ganga at dusk: long stone steps going down to the river, temple spires, small clay lamps (diyas) glowing on the steps and floating on the water, a purple and orange sky, calm and sacred."
+  },
+  {
+   "id": "dog_walk",
+   "type": "character",
+   "what": "the dog walking away",
+   "prompt": "The SAME tan Indian street dog as before (same coat and face, the wound on its head now a dark mark), walking away from the viewer in a rear three-quarter view toward the upper RIGHT, head low, a slow tired walk. A plain stray dog: NO collar, no necklace, no jewellery, no ornaments of any kind."
+  }
+ ],
+ "scenes": [
+  {
+   "from": 1,
+   "to": 2,
+   "place": "The court · Ayodhya",
+   "set": "set_court",
+   "camera": "push",
+   "transition": "cut",
+   "effects": [
+    "light",
+    "dust"
+   ],
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "ministers",
+     "x": 15.7,
+     "y": 69.3,
+     "size": 27.1,
+     "enter": "pop",
+     "at": 2.4
+    },
+    {
+     "id": "dog_gate",
+     "x": 81.5,
+     "y": 89.6,
+     "size": 22.4,
+     "walk_to": 38.9,
+     "walk_until": 1.58
+    },
+    {
+     "id": "monk_confess",
+     "x": 78.7,
+     "y": 91.7,
+     "size": 46.9,
+     "enter": "right",
+     "at": 2.62
+    }
+   ],
+   "notes": [
+    {
+     "at": 1.71,
+     "until": 1.98,
+     "text": "Asking for justice",
+     "x": 51.9,
+     "y": 68.2
+    }
+   ],
+   "stamps": [
+    {
+     "at": 2.85,
+     "text": "Rewarded",
+     "x": 68.5,
+     "y": 61.5
+    }
+   ],
+   "headlines": [
+    {
+     "at": 0,
+     "white": "A dog walked into",
+     "color": "Ram's court",
+     "tone": "red",
+     "color_at": 1.18
+    },
+    {
+     "at": 2.13,
+     "white": "Ram's verdict",
+     "color": "stunned the court",
+     "tone": "red",
+     "color_at": 2.37
+    },
+    {
+     "at": 2.7,
+     "white": "No punishment.",
+     "color": "A reward.",
+     "tone": "gold",
+     "color_at": 2.84
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "to": 3,
+   "place": "The court · later",
+   "set": "set_court",
+   "look": "dim",
+   "camera": "push",
+   "transition": "fade",
+   "effects": [
+    "dust"
+   ],
+   "shade": 0.5,
+   "characters": [
+    {
+     "id": "dog_sit",
+     "look": "shadow",
+     "x": 66.7,
+     "y": 69.3,
+     "size": 39.6,
+     "until": 3.25,
+     "exit": "fade"
+    },
+    {
+     "id": "kulapati",
+     "look": "shadow",
+     "x": 66.7,
+     "y": 69.3,
+     "size": 46.9,
+     "enter": "fade",
+     "at": 3.18,
+     "speed": 0.9,
+     "tag": "Whose shadow?",
+     "tag_at": 3.29,
+     "tag_y": 47.9
+    },
+    {
+     "id": "dog_sit",
+     "x": 37.0,
+     "y": 91.7,
+     "size": 37.5,
+     "look": "dusk"
+    }
+   ],
+   "headlines": [
+    {
+     "at": 3.0,
+     "white": "Then the dog",
+     "color": "revealed a secret",
+     "tone": "red",
+     "color_at": 3.18
+    },
+    {
+     "at": 3.54,
+     "white": "The reward",
+     "color": "was the punishment",
+     "tone": "red",
+     "color_at": 3.74
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "to": 4,
+   "place": "The court · morning",
+   "set": "set_court",
+   "look": "bright",
+   "camera": "push",
+   "transition": "fade",
+   "effects": [
+    "light",
+    "dust"
+   ],
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "lakshman",
+     "x": 27.8,
+     "y": 85.4,
+     "size": 44.8,
+     "enter": "left",
+     "at": 4.24,
+     "exit": "right",
+     "until": 5.12
+    }
+   ],
+   "notes": [
+    {
+     "at": 4.47,
+     "text": "\"Any petitioners?\"",
+     "x": 66.7,
+     "y": 64.6
+    }
+   ],
+   "headlines": [
+    {
+     "at": 4.0,
+     "white": "One morning,",
+     "color": "Ram sent Lakshman",
+     "tone": "gold",
+     "color_at": 4.31
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "to": 8,
+   "place": "The palace gate",
+   "set": "set_gate",
+   "camera": "push",
+   "transition": "slide",
+   "effects": [
+    "clouds"
+   ],
+   "shade": 0.5,
+   "characters": [
+    {
+     "id": "lakshman",
+     "x": 73.1,
+     "y": 88.5,
+     "size": 46.9,
+     "until": 6.3
+    },
+    {
+     "id": "lakshman",
+     "x": 73.1,
+     "y": 88.5,
+     "size": 46.9,
+     "flip": true,
+     "at": 6.3
+    },
+    {
+     "id": "dog_gate",
+     "flip": true,
+     "x": -24.1,
+     "y": 86.5,
+     "size": 24.5,
+     "at": 7.1,
+     "walk_to": 33.3,
+     "walk_until": 7.39,
+     "tag": "Head wound",
+     "tag_at": 7.57,
+     "tag_until": 8.0
+    }
+   ],
+   "counter": {
+    "at": 5.28,
+    "until": 7.49,
+    "label": "Petitioners today",
+    "from": "0",
+    "to": "1",
+    "change_at": 7.26,
+    "x": 50,
+    "y": 33.3
+   },
+   "notes": [
+    {
+     "at": 8.33,
+     "text": "\"A king's house is a house of gods.\"",
+     "x": 50,
+     "y": 39.6
+    },
+    {
+     "at": 8.68,
+     "text": "\"Not without permission.\"",
+     "x": 55.6,
+     "y": 52.1
+    }
+   ],
+   "headlines": [
+    {
+     "at": 5.0,
+     "white": "Lakshman:",
+     "color": "\"No one, bhaiya.\"",
+     "tone": "gold",
+     "color_at": 5.3
+    },
+    {
+     "at": 5.54,
+     "white": "Ram rajya:",
+     "color": "no complaints",
+     "tone": "green",
+     "color_at": 5.78
+    },
+    {
+     "at": 6.0,
+     "white": "\"Look again.\""
+    },
+    {
+     "at": 7.0,
+     "white": "At the gate:",
+     "color": "a wounded dog",
+     "tone": "red",
+     "color_at": 7.49
+    },
+    {
+     "at": 8.0,
+     "white": "But it would not",
+     "color": "step inside",
+     "tone": "red",
+     "color_at": 8.05
+    },
+    {
+     "at": 8.22,
+     "white": "It waited",
+     "color": "at the door",
+     "tone": "gold",
+     "color_at": 8.28
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 9,
+   "place": "The court",
+   "set": "set_court",
+   "camera": "push",
+   "transition": "iris",
+   "iris_at": [
+    50,
+    55
+   ],
+   "effects": [
+    "light"
+   ],
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "dog_sit",
+     "x": 27.8,
+     "y": 91.7,
+     "size": 33.3,
+     "enter": "left",
+     "at": 9.55
+    }
+   ],
+   "headlines": [
+    {
+     "at": 9.0,
+     "white": "Ram:",
+     "color": "\"Bring him in.\"",
+     "tone": "gold",
+     "color_at": 9.49
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "to": 10,
+   "place": "The street · that noon",
+   "set": "set_street",
+   "camera": "push",
+   "transition": "zoom",
+   "shade": 0.55,
+   "characters": [
+    {
+     "id": "dog_gate",
+     "flip": true,
+     "x": 30,
+     "y": 88,
+     "size": 22
+    },
+    {
+     "id": "monk_angry",
+     "x": 66,
+     "y": 92,
+     "size": 52,
+     "enter": "right",
+     "at": 10.13,
+     "tag": "Sarvarthasiddha · a mendicant",
+     "tag_at": 10.24
+    }
+   ],
+   "stamps": [
+    {
+     "at": 10.93,
+     "text": "Beaten",
+     "x": 34,
+     "y": 58,
+     "rot": -8
+    }
+   ],
+   "headlines": [
+    {
+     "at": 10.0,
+     "white": "The complaint:",
+     "color": "beaten for nothing",
+     "tone": "red",
+     "color_at": 10.61
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 12,
+   "place": "The court",
+   "set": "set_court",
+   "camera": "right",
+   "transition": "fade",
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "dog_sit",
+     "x": 23.1,
+     "y": 91.7,
+     "size": 31.2
+    },
+    {
+     "id": "monk_confess",
+     "x": 74.1,
+     "y": 91.7,
+     "size": 51.0,
+     "enter": "right",
+     "tag": "Sarvarthasiddha",
+     "tag_at": 11.34,
+     "tag_until": 12.0,
+     "tag_y": 36.5
+    }
+   ],
+   "notes": [
+    {
+     "at": 12.05,
+     "text": "I was hungry.",
+     "check": true,
+     "x": 30.6,
+     "y": 33.3
+    },
+    {
+     "at": 12.2,
+     "text": "It blocked my way.",
+     "check": true,
+     "x": 38.9,
+     "y": 41.7
+    },
+    {
+     "at": 12.54,
+     "text": "I struck in anger.",
+     "check": true,
+     "x": 35.2,
+     "y": 50.0
+    }
+   ],
+   "headlines": [
+    {
+     "at": 11.0,
+     "white": "The mendicant",
+     "color": "confessed",
+     "tone": "red",
+     "color_at": 11.71
+    },
+    {
+     "at": 12.0,
+     "white": "His defence:"
+    },
+    {
+     "at": 12.73,
+     "white": "\"Punish me,",
+     "color": "O king.\"",
+     "tone": "red",
+     "color_at": 12.91
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "to": 13,
+   "place": "The law",
+   "set": "set_court",
+   "camera": "right",
+   "transition": "slide-back",
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "sages",
+     "x": 70.4,
+     "y": 92.7,
+     "size": 51.0,
+     "enter": "right",
+     "tag": "Vasishtha · Bhrigu · Kashyapa",
+     "tag_at": 13.12
+    }
+   ],
+   "stamps": [
+    {
+     "at": 13.71,
+     "text": "No death penalty",
+     "x": 30.6,
+     "y": 59.9,
+     "rot": -9
+    }
+   ],
+   "headlines": [
+    {
+     "at": 13.08,
+     "white": "The sages:",
+     "color": "the law forbids death",
+     "tone": "red",
+     "color_at": 13.67
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "to": 14,
+   "place": "The court",
+   "set": "set_court",
+   "camera": "close",
+   "transition": "fade",
+   "effects": [
+    "dust"
+   ],
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "dog_sit",
+     "x": 35.2,
+     "y": 92.7,
+     "size": 39.6
+    }
+   ],
+   "notes": [
+    {
+     "at": 14.84,
+     "text": "Kulapati = head of the math",
+     "x": 50,
+     "y": 46
+    }
+   ],
+   "headlines": [
+    {
+     "at": 14.0,
+     "white": "Then the dog",
+     "color": "spoke up",
+     "tone": "gold",
+     "color_at": 14.12
+    },
+    {
+     "at": 14.33,
+     "white": "\"You promised",
+     "color": "me a boon.\"",
+     "tone": "gold",
+     "color_at": 14.42
+    },
+    {
+     "at": 14.65,
+     "white": "\"Make him head",
+     "color": "of Kalinjar math\"",
+     "tone": "gold",
+     "color_at": 14.71
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 16,
+   "place": "Kalinjar · Bundelkhand",
+   "set": "set_kalinjar",
+   "camera": "push",
+   "transition": "slide",
+   "effects": [
+    "clouds",
+    "petals"
+   ],
+   "shade": 0.45,
+   "characters": [
+    {
+     "id": "monk_elephant",
+     "x": -29.6,
+     "y": 95.3,
+     "size": 52.1,
+     "walk_to": 70.4
+    }
+   ],
+   "stamps": [
+    {
+     "at": 16.67,
+     "text": "Promoted",
+     "x": 64.8,
+     "y": 53.1,
+     "rot": -10
+    }
+   ],
+   "headlines": [
+    {
+     "at": 15.0,
+     "white": "Ram agreed."
+    },
+    {
+     "at": 16.0,
+     "white": "Off he went",
+     "color": "on a royal elephant",
+     "tone": "gold",
+     "color_at": 16.26
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "place": "The court",
+   "set": "set_court",
+   "camera": "face",
+   "transition": "slide-back",
+   "effects": [
+    "light"
+   ],
+   "shade": 0.6,
+   "characters": [
+    {
+     "id": "ram_throne",
+     "x": 50,
+     "y": 54.4,
+     "size": 31.3
+    },
+    {
+     "id": "ministers",
+     "x": 75.0,
+     "y": 92.7,
+     "size": 46.9,
+     "enter": "right",
+     "exit": "right",
+     "until": 18.06
+    }
+   ],
+   "stamps": [
+    {
+     "at": 17.83,
+     "text": "Boon?",
+     "color": "gold",
+     "x": 30,
+     "y": 50
+    }
+   ],
+   "notes": [
+    {
+     "at": 18.29,
+     "until": 18.69,
+     "text": "\"You don't know the way of karma.\"",
+     "x": 50,
+     "y": 67.7
+    }
+   ],
+   "headlines": [
+    {
+     "at": 17.0,
+     "white": "The ministers:",
+     "color": "\"That's a boon!\"",
+     "tone": "gold",
+     "color_at": 17.79
+    },
+    {
+     "at": 18.18,
+     "white": "Ram smiled."
+    },
+    {
+     "at": 18.69,
+     "white": "\"The dog",
+     "color": "knows.\"",
+     "tone": "red",
+     "color_at": 18.89
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "place": "The court · the secret",
+   "set": "set_court",
+   "look": "dim",
+   "camera": "push",
+   "transition": "fade",
+   "effects": [
+    "dust"
+   ],
+   "shade": 0.5,
+   "characters": [
+    {
+     "id": "dog_sit",
+     "look": "shadow",
+     "x": 66.7,
+     "y": 69.3,
+     "size": 39.6,
+     "until": 20.35,
+     "exit": "fade",
+     "speed": 0.8
+    },
+    {
+     "id": "kulapati",
+     "look": "shadow",
+     "x": 66.7,
+     "y": 69.3,
+     "size": 50.0,
+     "at": 20.0,
+     "enter": "fade",
+     "speed": 1.2,
+     "tag": "Kulapati of Kalinjar",
+     "tag_at": 20.71,
+     "tag_y": 74.0
+    },
+    {
+     "id": "dog_sit",
+     "x": 35.2,
+     "y": 92.2,
+     "size": 38.5,
+     "look": "dusk"
+    }
+   ],
+   "headlines": [
+    {
+     "at": 19.04,
+     "white": "The dog's secret:"
+    },
+    {
+     "at": 20.0,
+     "white": "Last life, it was",
+     "color": "the kulapati",
+     "tone": "red",
+     "color_at": 20.67
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "place": "Past life · Kalinjar math",
+   "set": "set_treasury",
+   "camera": "push",
+   "transition": "iris",
+   "iris_at": [
+    65,
+    33
+   ],
+   "effects": [
+    "embers"
+   ],
+   "shade": 0.35,
+   "characters": [
+    {
+     "id": "kulapati",
+     "x": 68.5,
+     "y": 92.7,
+     "size": 55.2,
+     "until": 22.61,
+     "exit": "fade",
+     "speed": 0.7
+    },
+    {
+     "id": "dog_sit",
+     "x": 64.8,
+     "y": 92.7,
+     "size": 37.5,
+     "at": 22.33,
+     "enter": "fade",
+     "speed": 0.8
+    }
+   ],
+   "notes": [
+    {
+     "at": 21.08,
+     "until": 22.0,
+     "text": "Worship",
+     "check": true,
+     "x": 23.1,
+     "y": 33.3
+    },
+    {
+     "at": 21.25,
+     "until": 22.0,
+     "text": "Service",
+     "check": true,
+     "x": 24.1,
+     "y": 41.7
+    },
+    {
+     "at": 21.76,
+     "until": 22.0,
+     "text": "Every coin guarded",
+     "check": true,
+     "x": 27.8,
+     "y": 50.0
+    }
+   ],
+   "headlines": [
+    {
+     "at": 21.0,
+     "white": "He did it all right"
+    },
+    {
+     "at": 22.0,
+     "white": "Still,",
+     "color": "reborn a dog",
+     "tone": "red",
+     "color_at": 22.38
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 23,
+   "place": "The court",
+   "set": "set_court",
+   "look": "dark",
+   "camera": "push",
+   "transition": "fade",
+   "shade": 0.4,
+   "characters": [
+    {
+     "id": "monk_angry",
+     "x": 73.1,
+     "y": 93.8,
+     "size": 52.1,
+     "look": "warm"
+    }
+   ],
+   "stamps": [
+    {
+     "at": 23.66,
+     "text": "Generations",
+     "x": 36,
+     "y": 46,
+     "rot": -8
+    }
+   ],
+   "headlines": [
+    {
+     "at": 23.0,
+     "white": "And this man?",
+     "color": "Angry.",
+     "tone": "red",
+     "color_at": 23.21
+    },
+    {
+     "at": 23.53,
+     "white": "He'd sink",
+     "color": "generations",
+     "tone": "red",
+     "color_at": 23.61
+    }
+   ]
+  },
+  {
+   "from": 24,
+   "to": 24,
+   "place": "Kashi · the ghats",
+   "set": "set_kashi",
+   "camera": "push",
+   "transition": "fade",
+   "effects": [
+    "embers"
+   ],
+   "shade": 0.35,
+   "characters": [
+    {
+     "id": "dog_walk",
+     "x": 33.3,
+     "y": 95.8,
+     "size": 29.2,
+     "walk_to": 51.9,
+     "look": "warm"
+    }
+   ],
+   "headlines": [
+    {
+     "at": 24.28,
+     "white": "It went to Kashi",
+     "color": "and fasted to the end",
+     "tone": "gold",
+     "color_at": 24.68
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 25,
+   "place": "The lesson",
+   "set": "set_court",
+   "look": "dusk",
+   "camera": "push",
+   "transition": "fade",
+   "effects": [
+    "light",
+    "dust"
+   ],
+   "shade": 0.55,
+   "stamps": [
+    {
+     "at": 25.83,
+     "text": "Test",
+     "x": 50,
+     "y": 55.2,
+     "rot": -8
+    }
+   ],
+   "headlines": [
+    {
+     "at": 25.12,
+     "white": "Next time you get",
+     "color": "a seat of power,",
+     "tone": "gold",
+     "color_at": 25.23
+    },
+    {
+     "at": 25.55,
+     "white": "It's not a reward.",
+     "color": "It's a test.",
+     "tone": "red",
+     "color_at": 25.81
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 26,
+   "place": "Untold Ramayan",
+   "set": "set_gate",
+   "look": "warm",
+   "camera": "push",
+   "transition": "slide",
+   "effects": [
+    "clouds"
+   ],
+   "shade": 0.5,
+   "characters": [
+    {
+     "id": "dog_sit",
+     "x": 50,
+     "y": 92.2,
+     "size": 33.3
+    }
+   ],
+   "headlines": [
+    {
+     "at": 26.0,
+     "white": "More untold",
+     "color": "Ramayan stories",
+     "tone": "gold",
+     "color_at": 26.46
+    }
+   ]
+  }
+ ]
+}
