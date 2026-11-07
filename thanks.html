@@ -58,11 +58,12 @@
   }
 
   async function kitReady(st) {
-    const name = st.kind === "paper99" ? "Mobile edition" : "Claude Code edition";
-    show("Payment received 🙏", "Your Paper Motion Kit (" + name + ") guide is downloading. A copy has also been emailed to <b>" + esc(st.email) + "</b>.",
+    const name = st.kind === "wise99" ? "The Wiser Reels Method" : "Paper Motion Kit (" + (st.kind === "paper99" ? "Mobile edition" : "Claude Code edition") + ")";
+    if (st.brand) { document.querySelector(".tag").textContent = st.brand; document.querySelectorAll(".small a").forEach((a) => { a.textContent = st.brand; a.href = "https://www.instagram.com/" + st.brand.replace("@", "") + "/"; }); }
+    show("Payment received 🙏", "Your guide, " + esc(name) + ", is downloading. A copy has also been emailed to <b>" + esc(st.email) + "</b>.",
       '<button class="btn" id="dl">⬇ Download the guide (PDF)</button><a class="btn alt" id="open" target="_blank" rel="noopener">Open the guide</a>' +
-      '<a class="btn alt" href="' + esc(st.zip) + '">📦 Download the kit (zip)</a>' +
-      '<a class="btn alt" href="' + esc(st.studio) + '">🎬 Open Paper Studio</a>' +
+      (st.zip ? '<a class="btn alt" href="' + esc(st.zip) + '">📦 Download the kit (zip)</a>' : '') +
+      (st.studio ? '<a class="btn alt" href="' + esc(st.studio) + '">🎬 Open Paper Studio</a>' : '') +
       (st.wa ? '<a class="btn alt" href="' + esc(st.wa) + '">💬 WhatsApp support: ' + esc(st.whatsapp) + '</a>' : '') +
       '<p class="note">Using Instagram\'s browser and the download doesn\'t start? Tap ••• and choose "Open in browser", or use the copy in your email.</p>');
     $("dl").disabled = true; $("dl").textContent = "Preparing your download…";
@@ -83,11 +84,11 @@
       const st = await (await fetch(S.api + "?action=status&ref=" + encodeURIComponent(ref))).json();
       if (st.error) throw new Error(st.error);
       if (st.status === "confirmed" && st.kind === "guide") return guideReady(st);
-      if (st.status === "confirmed" && /^paper/.test(st.kind)) return kitReady(st);
+      if (st.status === "confirmed" && /^(paper|wise)/.test(st.kind)) return kitReady(st);
       if (st.status === "confirmed") return show("Your session is confirmed 🙏", "See you on <b>" + esc(st.when) + "</b>.<br>The Google Meet link and a calendar invite have been sent to <b>" + esc(st.email) + "</b>.", '<a class="btn alt" href="index.html">Back to the guide page</a>');
       if (st.status === "pending" && tries > 0) return setTimeout(() => check(tries - 1), 4000);
       if (st.status === "pending") return show("Waiting for the payment", "We haven't received the payment yet. If you paid, it is usually confirmed within a few minutes and you'll get an email.", '<button class="btn" onclick="location.reload()">Check again</button>');
-      show("Payment not completed", "This payment link has expired" + (st.kind === "session" ? " and the slot was released" : "") + ". Please try again.", '<a class="btn" href="' + (st.kind === "session" ? "session.html" : /^paper/.test(st.kind) ? "paper/" : "index.html") + '">Try again</a>');
+      show("Payment not completed", "This payment link has expired" + (st.kind === "session" ? " and the slot was released" : "") + ". Please try again.", '<a class="btn" href="' + (st.kind === "session" ? "session.html" : /^paper/.test(st.kind) ? "paper/" : /^wise/.test(st.kind) ? "wiser/" : "index.html") + '">Try again</a>');
     } catch (x) {
       if (tries > 0) return setTimeout(() => check(tries - 1), 4000);
       show("Something went wrong", esc(x.message) + " If you paid, you'll still get an email. DM us on Instagram if it doesn't arrive.", "");
