@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Your Call Method · @yourcall.hindistories</title>
+<meta name="description" content="How to make interactive Hindi story reels where the comments decide what happens next. Script, pictures, voice, edit and the vote, by hand with free apps on phone or PC. 14-page PDF guide, ₹99.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&family=Hind:wght@400;600&family=Kalam:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0f13;--night:#161a24;--night2:#1f2431;--paper:#efe6d6;--red:#e5322d;--gold:#ffc83a;--muted:#8d8574;--line:#2c3242}
+*{box-sizing:border-box}
+html{background:var(--ink)}
+body{margin:0;color:var(--paper);font:17px/1.55 Hind,system-ui,sans-serif;background:var(--ink);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.mono{font-family:"Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+.mast{display:flex;justify-content:space-between;gap:12px;padding:14px 0 10px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+.mast b{background:var(--red);color:#fff;padding:2px 8px;border-radius:20px;font-weight:700}
+/* hero */
+.hero{display:grid;gap:26px;padding:30px 0 34px}
+.pill{display:inline-block;background:var(--red);color:#fff;font:700 12px "Space Mono",monospace;letter-spacing:.14em;padding:5px 12px;border-radius:30px}
+h1{font:900 clamp(48px,12vw,98px)/.92 Inter,sans-serif;letter-spacing:-.045em;margin:16px 0 0}
+h1 span{color:var(--red)}
+.lead{font-size:19px;max-width:540px;margin:18px 0 0;color:#e6dccb}
+.lead b{color:#fff}
+.vote{display:flex;gap:12px;margin-top:22px}
+.vote div{font:900 22px Inter;padding:10px 22px;border-radius:14px;background:#f6efe2;color:var(--ink);animation:pick 1.4s infinite}
+.vote div+div{background:var(--red);color:#fff;animation-delay:.7s}
+@keyframes pick{0%,45%{transform:scale(1.07);box-shadow:0 0 0 4px rgba(255,255,255,.75)}50%,100%{transform:scale(.95);box-shadow:none}}
+@media (prefers-reduced-motion:reduce){.vote div{animation:none}}
+.cta{display:inline-flex;align-items:center;gap:14px;margin-top:26px;background:var(--gold);color:var(--ink);text-decoration:none;font:900 20px Inter;padding:16px 22px;border-radius:12px;box-shadow:0 10px 30px rgba(255,200,58,.25)}
+.cta span{background:var(--ink);color:var(--gold);padding:3px 10px;border-radius:8px}
+.phone{position:relative;max-width:340px;margin:0 auto;border-radius:34px;overflow:hidden;border:8px solid #22262f;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.phone img{display:block;width:100%}
+/* sections */
+.sec{padding:46px 0;border-top:1px solid var(--line)}
+.sec h2{font:900 clamp(32px,7vw,54px)/.98 Inter;letter-spacing:-.035em;margin:10px 0 16px}
+.sec h2 em{font-style:normal;color:var(--gold)}
+.frames{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px}
+.frames figure{margin:0}
+.frames img{width:100%;display:block;border-radius:14px;border:1px solid var(--line)}
+.frames figcaption{font:700 11px/1.35 "Space Mono";color:var(--muted);margin-top:8px;text-transform:uppercase;letter-spacing:.06em}
+.why{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:22px}
+.why div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:16px}
+.why b{display:block;font:800 18px Inter;color:#fff;margin-bottom:4px}
+/* contents */
+.inside{display:grid;gap:26px}
+.toc{list-style:none;margin:0;padding:0;background:var(--paper);color:var(--ink);border-radius:16px;padding:18px 20px}
+.toc li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed #cdbfa8;padding:9px 0;font-size:16px}
+.toc li:last-child{border:0}
+.toc b{font-family:Inter;font-weight:800}
+.toc i{font-style:normal;font-family:"Space Mono";font-size:13px;color:#6b6257;white-space:nowrap}
+.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pages img{width:100%;display:block;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.pages img:nth-child(1){transform:rotate(-2deg)}.pages img:nth-child(3){transform:rotate(2deg)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.tools span{border:1px solid var(--line);background:var(--night);border-radius:30px;padding:7px 14px;font-weight:600}
+/* buy */
+.ticket{display:grid;grid-template-columns:1fr auto;max-width:640px;background:var(--paper);color:var(--ink);border-radius:16px;overflow:hidden;margin:6px 0 22px}
+.ticket .l{padding:22px}
+.ticket h3{font:900 26px/1.05 Inter;margin:0 0 8px;letter-spacing:-.02em}
+.ticket ul{margin:0;padding-left:18px;font-size:15.5px}
+.ticket .r{background:var(--red);color:#fff;padding:22px 24px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:130px}
+.ticket .r b{font:900 52px/1 Inter;letter-spacing:-.03em}
+.ticket .r small{font:700 11px "Space Mono";letter-spacing:.1em;opacity:.85;margin-top:4px}
+form{max-width:640px;background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px}
+label{display:block;font:700 12px "Space Mono";letter-spacing:.08em;text-transform:uppercase;margin:12px 0 6px;color:var(--muted)}
+input{width:100%;font:inherit;font-size:17px;padding:13px 12px;border:1px solid #3a4256;background:#0b0d12;color:#fff;border-radius:10px}
+input:focus{outline:3px solid var(--gold);outline-offset:0}
+button.pay{width:100%;margin-top:18px;background:var(--gold);color:var(--ink);border:0;font:900 20px Inter;padding:16px;cursor:pointer;border-radius:12px}
+button.pay:disabled{opacity:.6}
+.err{color:#ff8a80;min-height:22px;margin-top:10px;font-weight:600}
+.fine{font-size:13.5px;color:var(--muted);margin-top:10px}
+.faq{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:10px}
+.faq div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:16px 16px 18px;font-size:15.5px}
+.faq b{display:block;font:800 17px Inter;color:#fff;margin-bottom:4px}
+footer{border-top:1px solid var(--line);padding:18px 0 40px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+footer a{margin-right:12px}
+#buy{scroll-margin-top:20px}
+@media (min-width:860px){
+  .hero{grid-template-columns:1.1fr .9fr;align-items:center;padding-top:46px}
+  .inside{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media (max-width:620px){body{font-size:16px}.pill{font-size:10.5px;letter-spacing:.08em}.mast{font-size:10px}.mast .hide-s{display:none}.frames{grid-template-columns:repeat(2,1fr)}.lead{font-size:17.5px}.ticket .r{min-width:104px;padding:18px}.ticket .r b{font-size:42px}.vote div{font-size:19px;padding:9px 18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mast mono"><span><b>PDF GUIDE</b><span class="hide-s">&nbsp; The Your Call Method</span></span><span>@yourcall.hindistories</span></div>
+
+  <section class="hero">
+    <div>
+      <span class="pill">Free apps · phone or PC · no coding</span>
+      <h1>The <span>Your Call</span> Method</h1>
+      <p class="lead">Make interactive Hindi story reels where <b>the comments decide what happens next</b>, like <b>GALTI SE</b> on @yourcall.hindistories. The script, the pictures, the voice, the edit and the vote: every step by hand, with free apps.</p>
+      <div class="vote" aria-hidden="true"><div>BHEJO</div><div>BANK</div></div>
+      <a class="cta" href="#buy">Get the guide <span>₹99</span></a>
+    </div>
+    <div class="phone"><img src="f35.jpg" alt="A frame from GALTI SE Part 1: a money bar on top and a gold pop-up showing ₹4,80,000"></div>
+  </section>
+
+  <section class="sec">
+    <span class="pill">What you'll make</span>
+    <h2>One reel, <em>four parts</em></h2>
+    <div class="frames">
+      <figure><img src="f21.jpg" alt="Phone notification: ₹4,80,000 credited"><figcaption>The event on a phone card</figcaption></figure>
+      <figure><img src="f30.jpg" alt="Beige RULE 1 card with a red 2 SAAL JAIL stamp"><figcaption>A RULE card with a real fact</figcaption></figure>
+      <figure><img src="f51.jpg" alt="A message card: ₹50,000 tum rakh lo"><figcaption>The temptation and the clock</figcaption></figure>
+      <figure><img src="f66.jpg" alt="Vote ending with BHEJO and BANK buttons"><figcaption>The vote: comment one word</figcaption></figure>
+    </div>
+    <div class="why">
+      <div><b>Comments, built in</b>Every vote is a comment, and comments carry a reel to more people.</div>
+      <div><b>A reason to follow</b>"Part 2 kal": people come back to see what their vote did.</div>
+      <div><b>Useful, so it's saved</b>Each episode teaches two real money or law rules people share with family.</div>
+      <div><b>No face, no camera</b>Pictures, a voice and a few graphics. That's the whole reel.</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <span class="pill">14-page PDF</span>
+    <h2>What's <em>inside</em></h2>
+    <div class="inside">
+      <ul class="toc">
+        <li><b>Your free toolkit, phone and PC</b><i>p. 3</i></li>
+        <li><b>Pick the story: the 5-slot formula</b><i>p. 4</i></li>
+        <li><b>The beat sheet, second by second</b><i>p. 5</i></li>
+        <li><b>Copy-paste script prompt (+ Part 2)</b><i>p. 6</i></li>
+        <li><b>Exact picture prompts, same face every time</b><i>p. 7–8</i></li>
+        <li><b>The voice: yours or ElevenLabs</b><i>p. 9</i></li>
+        <li><b>The edit: money bar, phone cards, RULE cards, vote</b><i>p. 10–11</i></li>
+        <li><b>Sound: bed, hits, foley, levels</b><i>p. 12</i></li>
+        <li><b>Post, pin, count the votes, Part 2</b><i>p. 13</i></li>
+        <li><b>20 story ideas with their votes + checklist</b><i>p. 14</i></li>
+      </ul>
+      <div>
+        <div class="pages"><img src="cover.jpg" alt="Guide cover"><img src="page7.jpg" alt="Picture prompts page"><img src="page10.jpg" alt="Edit page"></div>
+        <div class="tools"><span>ChatGPT · free</span><span>Gemini · free</span><span>Canva · free</span><span>Instagram Edits · free</span><span>ElevenLabs · free plan</span><span>Your own voice</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="buy">
+    <span class="pill">One-time · instant PDF</span>
+    <h2>Get the <em>guide</em></h2>
+    <div class="ticket">
+      <div class="l"><h3>The Your Call Method</h3><ul><li>14-page PDF, simple English</li><li>Phone and PC steps</li><li>Copy-paste script &amp; picture prompts</li><li>Download right after paying</li></ul></div>
+      <div class="r"><b>₹99</b><small>ONE TIME</small></div>
+    </div>
+    <form id="form" novalidate>
+      <label for="name">Your name</label><input id="name" autocomplete="name" required>
+      <label for="email">Email (your copy of the guide)</label><input id="email" type="email" autocomplete="email" required>
+      <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
+      <button class="pay" id="pay" type="submit">Pay ₹99 &amp; download</button>
+      <div class="err" id="err"></div>
+      <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
+    </form>
+  </section>
+
+  <section class="sec">
+    <span class="pill">Questions</span>
+    <h2>Before you <em>buy</em></h2>
+    <div class="faq">
+      <div><b>Do I need Claude, coding or a paid app?</b>No. Everything is done by hand with free apps: ChatGPT or Gemini, Canva or Edits, and your own voice.</div>
+      <div><b>Phone only. Is that enough?</b>Yes. Every step works on a phone; the PC steps are there if you have one.</div>
+      <div><b>Do I have to show my face?</b>No. The whole format is pictures, a voice and a few graphics.</div>
+      <div><b>Will my reels go viral?</b>Nobody can promise views. This is the exact method behind GALTI SE; results depend on your stories and on posting regularly.</div>
+    </div>
+  </section>
+
+  <footer class="mono"><div><a href="../terms.html">Terms</a><a href="../privacy.html">Privacy</a><a href="../refund.html">Refund</a><a href="../contact.html">Contact</a></div><div>Questions? DM <a href="https://www.instagram.com/yourcall.hindistories/">@yourcall.hindistories</a></div></footer>
+</div>
+<script src="../config.js"></script>
+<script src="../count.js" data-page="yourcall"></script>
+<script>
+(function () {
+  const S = window.SHOP, $ = (id) => document.getElementById(id);
+  $("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    $("err").textContent = ""; $("pay").disabled = true; $("pay").textContent = "Opening secure payment…";
+    try {
+      const r = await fetch(S.api, { method: "POST", body: JSON.stringify({ action: "buyKit", product: "yc99", name: $("name").value, email: $("email").value, phone: $("phone").value }) });
+      const d = await r.json();
+      if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
+      location.href = d.url;
+    } catch (x) {
+      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹99 & download";
+    }
+  });
+})();
+</script>
+</body>
+</html>
