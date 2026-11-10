@@ -62,24 +62,28 @@ window.QUOTE = {
   planRule: "3D explainers take one of the two daily slots at most. Pair them with any other format for the second slot.",
 
   training: {
-    name: "15-Day Automation Training",
-    lead: "15 days, one live session a day. By day 15 your channel makes its reels, posts them, replies to people and reports its numbers on its own, and you know how to run every part of it.",
+    name: "15-Day AI Studio Training",
+    lead: "From zero to running your own AI studio. 15 days, one live session a day, no AI or coding experience needed. You'll learn APIs, MCP servers, connectors, GitHub and browser automation, build your own motion graphics skills, and leave with a channel that makes, posts and reports on its own.",
     tiers: [
       { key: "t1", name: "Solo", price: 49999, unit: "15 days · 1 live session a day · 1 person", for: "A creator who wants the whole system running on their own accounts.", points: ["Every automation set up on your own laptop and accounts", "Recordings of all 15 sessions", "30 days of WhatsApp support after day 15"], best: true },
       { key: "t2", name: "Team", price: 89999, unit: "15 days · 1 live session a day · up to 5 people", for: "A brand that wants an in-house team running the system.", points: ["Everything in Solo, for up to 5 people", "2 templates built in your brand's look and voice", "45 days of WhatsApp support after day 15"] }
     ],
     modules: [
-      { n: "Day 1", title: "Set up your AI studio", body: "Install and connect every tool on your laptop, and learn the one workspace that runs everything." },
-      { n: "Days 2–4", title: "Reels on autopilot", body: "Script and hook, Hindi voice-over, painted scenes with the same characters, moving 3D clips, music and export." },
-      { n: "Day 5", title: "A month of ideas in an hour", body: "Find trending stories and your competitors' best reels, and turn them into a content calendar." },
-      { n: "Day 6", title: "Auto-posting", body: "A posting queue that publishes at fixed times every day, with captions and hashtags written for you." },
-      { n: "Day 7", title: "Auto-DM and comment replies", body: "Send a link by DM when someone comments a keyword, and get replies drafted for every comment." },
-      { n: "Day 8", title: "Sell while you sleep", body: "A payment page, automatic delivery after payment, and a page where people book calls." },
-      { n: "Days 9–10", title: "Read your data", body: "Pull your insights automatically, find the reels that beat your average, and learn why they did." },
-      { n: "Day 11", title: "Your live dashboard", body: "Followers, views, saves, sales and best posting times on one page that updates itself." },
-      { n: "Days 12–13", title: "A channel that runs itself", body: "Join it all up: new reels are made, checked, posted and reported every day without you starting anything." },
-      { n: "Day 14", title: "Your brand's own templates", body: "Save your look and voice so anyone on your team gets the same style every time." },
-      { n: "Day 15", title: "Hand-over", body: "You run the whole system alone while we watch, fix what's left and plan your next month." }
+      { n: "Day 1", title: "AI from zero", body: "How AI models think, prompts vs agents, tokens and context windows, and what an AI agent can do on your own computer." },
+      { n: "Day 2", title: "Set up your AI studio", body: "Install the studio, terminal basics, projects and folders, and safe permissions so the agent can run commands for you." },
+      { n: "Day 3", title: "GitHub from zero", body: "What a repo is; clone, commit, push, branches and pull requests; free website hosting with GitHub Pages." },
+      { n: "Day 4", title: "APIs and keys", body: "What an API is, getting and protecting API keys, calling voice, image and video APIs, and keeping costs and rate limits in check." },
+      { n: "Day 5", title: "MCP servers and connectors", body: "What MCP is, plugging Drive, Gmail, YouTube and Instagram tools into your studio, and writing a small MCP server of your own." },
+      { n: "Day 6", title: "Browser automation", body: "Connect your own Chrome to the AI studio so it uses websites for you: logged-in sessions, making pictures and clips, downloads and uploads." },
+      { n: "Day 7", title: "Your skills library", body: "What skills are, installing a ready library (reels, captions, research, carousels, editing), and chaining skills into one workflow." },
+      { n: "Day 8", title: "Motion graphics skills", body: "Build your own motion graphics skill from a reference reel, clone and adapt open-source skills from GitHub, code animation with React and Remotion, and 3D scenes." },
+      { n: "Day 9", title: "Voice-over and sound", body: "AI voices and voice cloning, fixing Hindi pronunciation, timing words to picture, music, sound effects and Instagram loudness." },
+      { n: "Day 10", title: "Pictures and moving clips", body: "Consistent characters across scenes, AI image and video generation, smoothing to 60 fps, and rendering the final reel." },
+      { n: "Day 11", title: "Auto-posting, auto-DM and replies", body: "A posting queue at fixed times with captions and hashtags, a DM sent on a comment keyword, and reply drafts for every comment." },
+      { n: "Day 12", title: "Read your data and live dashboard", body: "Pull your insights through the API, find the reels that beat your average and why, and a dashboard that updates itself." },
+      { n: "Day 13", title: "A channel that runs itself", body: "Scheduled tasks and background jobs: new reels are made, checked, posted and reported every day without you starting anything." },
+      { n: "Day 14", title: "Your brand's templates and memory", body: "Save your look and voice as skills, give the agent a memory of your rules, and set it up for a team." },
+      { n: "Day 15", title: "Hand-over", body: "You run the whole studio alone while we watch, fix what's left and plan your next month." }
     ]
   },
 
