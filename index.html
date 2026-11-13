@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Animated Reel Guide · @mahabharat.retold</title>
-<meta name="description" content="The method behind @mahabharat.retold: 6.4 million views in our first 18 days with animated mythology reels. From the story to posting, step by step, no coding. 6-page PDF guide, ₹199.">
+<meta name="description" content="The method behind @mahabharat.retold: 6.4 million views in our first 18 days with animated mythology reels. From the story to posting, step by step, no coding: with the Claude app or free without a Claude subscription. 7-page PDF guide, ₹199.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Inter:wght@500;600;800;900&family=Hind:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -24,7 +24,7 @@ h1{font:900 clamp(46px,11.5vw,94px)/.93 Inter,sans-serif;letter-spacing:-.045em;
 h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01em;color:var(--gold)}
 .lead{font-size:19px;max-width:560px;margin:18px 0 0;color:#eadfcb}
 .lead b{color:#fff}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin-top:24px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:420px;margin-top:24px}
 .stats div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:12px 12px 10px}
 .stats b{display:block;font:900 clamp(26px,6vw,36px)/1 Inter;color:var(--goldl);letter-spacing:-.03em}
 .stats small{display:block;font-size:13.5px;line-height:1.3;color:#d9ccb6;margin-top:6px}
@@ -39,11 +39,10 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .sec{padding:46px 0;border-top:1px solid var(--line)}
 .sec h2{font:900 clamp(32px,7vw,54px)/.98 Inter;letter-spacing:-.035em;margin:12px 0 16px}
 .sec h2 em{font:italic 700 1.1em "Cormorant Garamond",serif;letter-spacing:-.01em;color:var(--gold)}
-.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:10px}
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px;max-width:760px}
 .wall figure{margin:0;position:relative}
 .wall img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;border-radius:14px;border:1px solid var(--line)}
-.wall .v{position:absolute;left:8px;top:8px;background:rgba(0,0,0,.66);color:#fff;font:800 13px Inter;padding:3px 8px;border-radius:14px}
-.wall figure:nth-child(-n+3) .v{background:var(--gold);color:var(--ink)}
+.wall .v{position:absolute;left:10px;top:10px;background:var(--gold);color:var(--ink);font:900 clamp(13px,2.4vw,18px) Inter;padding:4px 10px;border-radius:16px}
 .wall figcaption{font:700 11px/1.35 "Space Mono";color:var(--muted);margin-top:8px;text-transform:uppercase;letter-spacing:.05em}
 .fine{font-size:13.5px;color:var(--muted);margin-top:14px}
 .uses{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:22px}
@@ -58,11 +57,13 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .toc li::before{content:counter(step);grid-row:span 2;width:30px;height:30px;border-radius:50%;background:var(--maroon);color:var(--goldl);display:grid;place-items:center;font:800 14px Inter}
 .toc b{font-family:Inter;font-weight:800}
 .toc span{color:#5c5046}
-.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-self:center}
-.pages img{width:100%;display:block;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.55)}
-.pages img:nth-child(1){transform:rotate(-2deg)}.pages img:nth-child(3){transform:rotate(2deg)}
-.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.tools span{border:1px solid var(--line);background:var(--night);border-radius:30px;padding:7px 14px;font-weight:600;font-size:15px}
+.ways{display:grid;gap:12px;align-content:start}
+.ways div{background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px}
+.ways b{display:block;font:800 19px Inter;color:#fff;margin:6px 0 4px}
+.ways .tag{font:700 11px "Space Mono";letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.ways .same{background:var(--maroon);border-color:rgba(233,180,76,.45);font:italic 700 22px/1.25 "Cormorant Garamond",serif;color:var(--goldl);text-align:center}
+.hero .two{margin:14px 0 0;font-size:16px;color:#d9ccb6}
+.hero .two b{color:var(--goldl)}
 /* buy */
 .ticket{display:grid;grid-template-columns:1fr auto;max-width:640px;background:var(--paper);color:var(--ink);border-radius:16px;overflow:hidden;margin:6px 0 22px}
 .ticket .l{padding:22px}
@@ -87,9 +88,6 @@ button.pay:disabled{opacity:.6}
 #resend h2{font:800 18px Inter;color:#fff;margin:0}
 #resend .note{font-size:14.5px;color:var(--muted)}
 #resend .btn{width:100%;margin-top:12px;background:transparent;color:var(--goldl);border:1.5px solid var(--gold);font:800 17px Inter;padding:13px;border-radius:12px;cursor:pointer}
-.faq{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:10px}
-.faq div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:16px 16px 18px;font-size:15.5px}
-.faq b{display:block;font:800 17px Inter;color:#fff;margin-bottom:4px}
 footer{border-top:1px solid var(--line);padding:18px 0 40px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 footer a{margin-right:12px}
 #buy{scroll-margin-top:20px}
@@ -97,7 +95,6 @@ footer a{margin-right:12px}
   .hero{grid-template-columns:1.15fr .85fr;align-items:center;padding-top:46px}
   .inside{grid-template-columns:1fr 1fr;align-items:start}
 }
-@media (max-width:760px){.wall{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:620px){body{font-size:16px}.pill{font-size:10.5px;letter-spacing:.08em}.mast{font-size:10px}.mast .hide-s{display:none}.lead{font-size:17.5px}.stats{gap:8px}.stats div{padding:10px 9px 9px}.stats small{font-size:12.5px}.ticket .r{min-width:104px;padding:18px}.ticket .r b{font-size:42px}.cta{font-size:18px;padding:14px 18px}.uses{grid-template-columns:1fr 1fr;gap:10px}.uses div{padding:13px 12px;font-size:14.5px;line-height:1.45}.uses b{font-size:15.5px}}
 </style>
 </head>
@@ -107,15 +104,15 @@ footer a{margin-right:12px}
 
   <section class="hero">
     <div>
-      <span class="pill">No coding · no drawing · 6-page PDF</span>
+      <span class="pill">No coding · no drawing · 7-page PDF</span>
       <h1>Animated reels that <span>go viral.</span></h1>
-      <p class="lead">The exact method behind <b>@mahabharat.retold</b>: from choosing the story to posting the reel, step by step. You talk to Claude in plain English or Hindi, and it draws and animates every scene.</p>
+      <p class="lead">The exact method behind <b>@mahabharat.retold</b>: from choosing the story to posting the reel, step by step. You talk to the AI in plain English or Hindi, and it draws and animates every scene.</p>
       <div class="stats">
         <div><b>6.4M</b><small>views in our first 18 days</small></div>
         <div><b>2.1M</b><small>views on a single reel</small></div>
-        <div><b>3</b><small>reels past 1 million views</small></div>
       </div>
       <a class="cta" href="#buy">Get the guide <s>₹499</s><span class="now-price">₹199</span></a>
+      <p class="two">With the Claude app, <b>or free without a Claude subscription</b>. Same quality.</p>
       <p class="push">It's your time to start going viral on Instagram.</p>
     </div>
     <div class="phone"><video src="mr/hero.mp4" poster="mr/hero.jpg" autoplay muted loop playsinline aria-label="A scene from our most-watched reel"></video><span class="views">▶ 2.1M views</span></div>
@@ -128,9 +125,6 @@ footer a{margin-right:12px}
       <figure><img src="mr/top1.jpg" alt="Asur vs Rakshas reel" loading="lazy"><span class="v">2.1M</span><figcaption>Asur vs Rakshas</figcaption></figure>
       <figure><img src="mr/top2.jpg" alt="Abhimanyu reel" loading="lazy"><span class="v">1.5M</span><figcaption>Abhimanyu</figcaption></figure>
       <figure><img src="mr/top3.jpg" alt="Kumbhakarna reel" loading="lazy"><span class="v">1.3M</span><figcaption>Kumbhakarna</figcaption></figure>
-      <figure><img src="mr/top4.jpg" alt="Arunasura reel" loading="lazy"><span class="v">263K</span><figcaption>Arunasura</figcaption></figure>
-      <figure><img src="mr/top5.jpg" alt="Indra vs Ravan reel" loading="lazy"><span class="v">251K</span><figcaption>Indra vs Ravan</figcaption></figure>
-      <figure><img src="mr/top6.jpg" alt="Govardhan reel" loading="lazy"><span class="v">195K</span><figcaption>Govardhan</figcaption></figure>
     </div>
     <p class="fine">Views as Instagram shows them on @mahabharat.retold on 13 November 2026. Our first reel went up on 26 October: 26 reels, 6.4 million views.</p>
   </section>
@@ -161,16 +155,19 @@ footer a{margin-right:12px}
         <li><b>Music and sound</b><span>Background score, conch, thunder and swords, mixed at Instagram's loudness.</span></li>
         <li><b>Render and post</b><span>Size, cover, caption, hashtags and when to post.</span></li>
       </ol>
-      <div class="pages"><img src="mr/page1.jpg" alt="The guide's cover"><img src="mr/page2.jpg" alt="Page 3: story, script and voice-over"><img src="mr/page3.jpg" alt="Page 5: music, sound, render and post"></div>
+      <div class="ways">
+        <div><span class="tag">Way A</span><b>With the Claude app</b>For anyone on the Claude Pro plan: set up once in about 15 minutes, then make every reel in the same folder.</div>
+        <div><span class="tag">Way B · the free trick</span><b>Without a Claude subscription</b>The same kit and the same steps, step by step in the guide, without paying for Claude.</div>
+        <div class="same">Same kit. Same quality.</div>
+      </div>
     </div>
-    <div class="tools"><span>Claude app (Pro plan)</span><span>ElevenLabs, free to start</span><span>Our Motion Kit, free</span><span>Mac or Windows, 8 GB RAM</span></div>
   </section>
 
   <section class="sec" id="buy">
     <span class="pill">One-time · instant PDF</span>
     <h2>Get the <em>guide</em></h2>
     <div class="ticket">
-      <div class="l"><h3>The Animated Reel Guide</h3><ul><li>6-page PDF, simple English</li><li>One-time setup in about 15 minutes</li><li>Copy-paste messages for every step</li><li>Download right after paying</li></ul></div>
+      <div class="l"><h3>The Animated Reel Guide</h3><ul><li>7-page PDF, simple English</li><li>With the Claude app, or free without a Claude subscription</li><li>Copy-paste messages for every step</li><li>Download right after paying</li></ul></div>
       <div class="r"><s>₹499</s><b class="now-price">₹199</b><small>LAUNCH PRICE</small></div>
     </div>
     <form id="form" novalidate>
@@ -181,19 +178,8 @@ footer a{margin-right:12px}
       <div class="err" id="err"></div>
       <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
-    <a class="mentor" href="session.html">🎥 <b>No Claude subscription?</b> 1:1 Reel Mentorship on free tools, ₹599: book a slot →</a>
+    <a class="mentor" href="session.html">🎥 <b>1:1 Reel Mentorship</b>, ₹599: book a slot →</a>
     <div id="resend"></div>
-  </section>
-
-  <section class="sec">
-    <span class="pill">Questions</span>
-    <h2>Before you <em>buy</em></h2>
-    <div class="faq">
-      <div><b>I can't code or draw. Can I do this?</b>Yes. You never type code. You talk to Claude in plain English or Hindi, look at the result and say what to change.</div>
-      <div><b>What do I need?</b>The Claude app with the paid Claude Pro plan, ElevenLabs (start on the free plan), our free Motion Kit, and a Mac or Windows computer with 8 GB of RAM.</div>
-      <div><b>No Claude subscription?</b>The guide has an easy start with ChatGPT and CapCut, or book the 1:1 mentorship: we set you up on free tools and make 5 reels together.</div>
-      <div><b>Will I also get millions of views?</b>Nobody can promise views. This is the exact method behind the numbers above; results depend on your stories and on posting regularly.</div>
-    </div>
   </section>
 
   <footer class="mono"><div><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund</a><a href="contact.html">Contact</a></div><div>Questions? DM <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div></footer>
