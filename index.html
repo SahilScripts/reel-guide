@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Animated Reel Guide · @mahabharat.retold</title>
-<meta name="description" content="How to make animated mythology reels: the complete workflow behind @mahabharat.retold, as a PDF guide.">
+<meta name="description" content="How to make animated mythology reels: the complete workflow behind @mahabharat.retold, as a PDF guide. ₹199.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,34 +12,40 @@
 <main>
   <div class="tag">@mahabharat.retold</div>
   <h1>How to make animated mythology reels</h1>
-  <p class="lead">From choosing the story to posting it: the exact workflow behind our reels, in simple steps. No coding needed. PDF guide, 6 pages.</p>
+  <p class="lead">From choosing the story to posting it: the exact workflow behind our reels, in simple steps. No coding needed.</p>
+
+  <div class="reels">
+    <img src="mg1.jpg" alt="Arjun raising his bow under a night sky, from a @mahabharat.retold reel">
+    <img src="mg2.jpg" alt="Two queens beside a fire, from a @mahabharat.retold reel">
+    <img src="mg3.jpg" alt="A prince inside a golden ring of light, from a @mahabharat.retold reel">
+  </div>
+  <p class="reels-note">Frames from our reels, made with this method</p>
+  <a class="btn" href="#buy">Get the guide · <s>₹499</s> <span class="now-price">₹199</span></a>
 
   <div class="card">
     <h2>What's inside</h2>
-    <ul>
-      <li>One-time setup with the Claude app (about 15 minutes)</li>
-      <li>Story and script: how to write a hook that stops the scroll</li>
-      <li>Voice-over with ElevenLabs</li>
-      <li>Characters, scenes and animation, with our ready-to-paste style prompt</li>
-      <li>Music, sound, rendering and posting</li>
-    </ul>
+    <ol class="steps">
+      <li><b>Setup</b><span>One-time setup with the Claude app, about 15 minutes</span></li>
+      <li><b>Story and script</b><span>How to write a hook that stops the scroll</span></li>
+      <li><b>Voice-over</b><span>A natural voice with ElevenLabs</span></li>
+      <li><b>Characters, scenes and animation</b><span>With our ready-to-paste style prompt</span></li>
+      <li><b>Finish and post</b><span>Music, sound, rendering and posting</span></li>
+    </ol>
   </div>
 
-  <div class="card" id="buy">
-    <div class="price"><s id="full">₹99</s><b id="now">₹9</b></div>
-    <p class="offer" id="offerText">Launch price until 9 November, 11:59 PM IST. After that, ₹99.</p>
-    <div class="timer" id="timer">
-      <div><b id="d">0</b><span>days</span></div><div><b id="h">00</b><span>hours</span></div>
-      <div><b id="m">00</b><span>min</span></div><div><b id="s">00</b><span>sec</span></div>
+  <div class="card buy" id="buy">
+    <div class="buy-head">
+      <div><span class="badge">Launch price</span><h2>The Animated Reel Guide</h2><small>PDF · 6 pages · instant download</small></div>
+      <div class="price"><s>₹499</s><b class="now-price">₹199</b></div>
     </div>
     <form id="form" novalidate>
       <label for="name">Your name</label><input id="name" autocomplete="name" required>
       <label for="email">Email (for your receipt and a backup copy)</label><input id="email" type="email" autocomplete="email" required>
       <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
-      <button class="btn" id="pay" type="submit">Buy the guide for ₹9</button>
+      <button class="btn" id="pay" type="submit">Buy the guide for ₹199</button>
       <div class="err" id="err"></div>
-      <p class="note">Secure payment by Razorpay (UPI, cards, netbanking). Download the PDF right after paying (a copy is also emailed to you).</p>
     </form>
+    <div class="trust"><span>🔒 Secure payment by Razorpay</span><span>UPI, cards, netbanking</span><span>⚡ PDF right after paying</span><span>✉️ A copy by email</span></div>
   </div>
 
   <a class="btn alt" href="session.html">🎥 1:1 Reel Mentorship, ₹599: book a slot</a>
@@ -53,29 +59,14 @@
 <script>
 (function () {
   const S = window.SHOP, $ = (id) => document.getElementById(id);
-  let end = new Date(S.offerEnd).getTime(), skew = 0, price = S.guideOffer;
-  function render() {
-    const left = end - (Date.now() + skew);
-    if (left <= 0) {
-      price = S.guideFull;
-      $("full").classList.add("hidden"); $("timer").classList.add("hidden");
-      $("now").textContent = "₹" + S.guideFull; $("offerText").textContent = "";
-      $("pay").textContent = "Buy the guide for ₹" + S.guideFull;
-      return false;
-    }
-    const t = Math.floor(left / 1000);
-    $("d").textContent = Math.floor(t / 86400);
-    $("h").textContent = String(Math.floor(t / 3600) % 24).padStart(2, "0");
-    $("m").textContent = String(Math.floor(t / 60) % 60).padStart(2, "0");
-    $("s").textContent = String(t % 60).padStart(2, "0");
-    return true;
+  let price = S.guideFull;
+  // The price shown is the one the shop charges right now.
+  function show(rupees) {
+    price = rupees;
+    document.querySelectorAll(".now-price").forEach((el) => { el.textContent = "₹" + rupees; });
+    $("pay").textContent = "Buy the guide for ₹" + rupees;
   }
-  render();
-  const tick = setInterval(() => { if (!render()) clearInterval(tick); }, 1000);
-  fetch(S.api + "?action=config").then((r) => r.json()).then((c) => {
-    if (!c.offerEnd) return;
-    end = c.offerEnd; skew = c.now - Date.now(); render();
-  }).catch(() => {});
+  fetch(S.api + "?action=config").then((r) => r.json()).then((c) => { if (c.guidePrice) show(c.guidePrice); }).catch(() => {});
   $("form").addEventListener("submit", async (e) => {
     e.preventDefault();
     $("err").textContent = ""; $("pay").disabled = true; $("pay").textContent = "Opening secure payment…";

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Your Call Method · @yourcall.hindistories</title>
-<meta name="description" content="How to make interactive Hindi story reels where the comments decide what happens next. Script, pictures, voice, edit and the vote, by hand with free apps on phone or PC. 14-page PDF guide, ₹99.">
+<meta name="description" content="How to make interactive Hindi story reels where the comments decide what happens next. Script, pictures, voice, edit and the vote, by hand with free apps on phone or PC. 14-page PDF guide, ₹199.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&family=Hind:wght@400;600&family=Kalam:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -31,6 +31,7 @@ h1 span{color:var(--red)}
 @media (prefers-reduced-motion:reduce){.vote div{animation:none}}
 .cta{display:inline-flex;align-items:center;gap:14px;margin-top:26px;background:var(--gold);color:var(--ink);text-decoration:none;font:900 20px Inter;padding:16px 22px;border-radius:12px;box-shadow:0 10px 30px rgba(255,200,58,.25)}
 .cta span{background:var(--ink);color:var(--gold);padding:3px 10px;border-radius:8px}
+.cta s{opacity:.55;text-decoration-thickness:2px;margin-right:-6px}
 .phone{position:relative;max-width:340px;margin:0 auto;border-radius:34px;overflow:hidden;border:8px solid #22262f;box-shadow:0 30px 70px rgba(0,0,0,.6)}
 .phone img{display:block;width:100%}
 /* sections */
@@ -64,6 +65,7 @@ h1 span{color:var(--red)}
 .ticket .r{background:var(--red);color:#fff;padding:22px 24px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:130px}
 .ticket .r b{font:900 52px/1 Inter;letter-spacing:-.03em}
 .ticket .r small{font:700 11px "Space Mono";letter-spacing:.1em;opacity:.85;margin-top:4px}
+.ticket .r s{font:800 24px/1 Inter;opacity:.7;text-decoration-thickness:3px;margin-bottom:4px}
 form{max-width:640px;background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px}
 label{display:block;font:700 12px "Space Mono";letter-spacing:.08em;text-transform:uppercase;margin:12px 0 6px;color:var(--muted)}
 input{width:100%;font:inherit;font-size:17px;padding:13px 12px;border:1px solid #3a4256;background:#0b0d12;color:#fff;border-radius:10px}
@@ -95,7 +97,7 @@ footer a{margin-right:12px}
       <h1>The <span>Your Call</span> Method</h1>
       <p class="lead">Make interactive Hindi story reels where <b>the comments decide what happens next</b>, like <b>GALTI SE</b> on @yourcall.hindistories. The script, the pictures, the voice, the edit and the vote: every step by hand, with free apps.</p>
       <div class="vote" aria-hidden="true"><div>BHEJO</div><div>BANK</div></div>
-      <a class="cta" href="#buy">Get the guide <span>₹99</span></a>
+      <a class="cta" href="#buy">Get the guide <s>₹499</s><span>₹199</span></a>
     </div>
     <div class="phone"><img src="f35.jpg" alt="A frame from GALTI SE Part 1: a money bar on top and a gold pop-up showing ₹4,80,000"></div>
   </section>
@@ -145,13 +147,13 @@ footer a{margin-right:12px}
     <h2>Get the <em>guide</em></h2>
     <div class="ticket">
       <div class="l"><h3>The Your Call Method</h3><ul><li>14-page PDF, simple English</li><li>Phone and PC steps</li><li>Copy-paste script &amp; picture prompts</li><li>Download right after paying</li></ul></div>
-      <div class="r"><b>₹99</b><small>ONE TIME</small></div>
+      <div class="r"><s>₹499</s><b>₹199</b><small>LAUNCH PRICE</small></div>
     </div>
     <form id="form" novalidate>
       <label for="name">Your name</label><input id="name" autocomplete="name" required>
       <label for="email">Email (your copy of the guide)</label><input id="email" type="email" autocomplete="email" required>
       <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
-      <button class="pay" id="pay" type="submit">Pay ₹99 &amp; download</button>
+      <button class="pay" id="pay" type="submit">Pay ₹199 &amp; download</button>
       <div class="err" id="err"></div>
       <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
@@ -184,7 +186,7 @@ footer a{margin-right:12px}
       if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
       location.href = d.url;
     } catch (x) {
-      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹99 & download";
+      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹199 & download";
     }
   });
 })();
