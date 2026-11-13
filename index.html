@@ -3,56 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Animated Reel Guide · @mahabharat.retold</title>
-<meta name="description" content="How to make animated mythology reels: the complete workflow behind @mahabharat.retold, as a PDF guide. ₹199.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>The Animated Reel Guide · @mahabharat.retold</title>
+<meta name="description" content="The method behind @mahabharat.retold: 6.4 million views in our first 18 days with animated mythology reels. From the story to posting, step by step, no coding. 6-page PDF guide, ₹199.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Inter:wght@500;600;800;900&family=Hind:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0a0b;--night:#1a1113;--night2:#24171a;--maroon:#7d1d2c;--gold:#e9b44c;--goldl:#ffd77d;--paper:#f5ead6;--muted:#a08f7e;--line:#36262b}
+*{box-sizing:border-box}
+html{background:var(--ink)}
+body{margin:0;color:var(--paper);font:17px/1.55 Hind,system-ui,sans-serif;background:radial-gradient(1200px 600px at 85% -10%,rgba(125,29,44,.55),transparent 60%),var(--ink);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.mono{font-family:"Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+.mast{display:flex;justify-content:space-between;gap:12px;padding:14px 0 10px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+.mast b{background:var(--gold);color:var(--ink);padding:2px 8px;border-radius:20px;font-weight:700}
+/* hero */
+.hero{display:grid;gap:30px;padding:30px 0 40px}
+.pill{display:inline-block;background:var(--maroon);color:var(--goldl);border:1px solid rgba(233,180,76,.45);font:700 12px "Space Mono",monospace;letter-spacing:.14em;padding:5px 12px;border-radius:30px;text-transform:uppercase}
+h1{font:900 clamp(46px,11.5vw,94px)/.93 Inter,sans-serif;letter-spacing:-.045em;margin:16px 0 0}
+h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01em;color:var(--gold)}
+.lead{font-size:19px;max-width:560px;margin:18px 0 0;color:#eadfcb}
+.lead b{color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin-top:24px}
+.stats div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:12px 12px 10px}
+.stats b{display:block;font:900 clamp(26px,6vw,36px)/1 Inter;color:var(--goldl);letter-spacing:-.03em}
+.stats small{display:block;font-size:13.5px;line-height:1.3;color:#d9ccb6;margin-top:6px}
+.cta{display:inline-flex;align-items:center;gap:14px;margin-top:24px;background:var(--gold);color:var(--ink);text-decoration:none;font:900 20px Inter;padding:16px 22px;border-radius:12px;box-shadow:0 10px 34px rgba(233,180,76,.3)}
+.cta span{background:var(--ink);color:var(--gold);padding:3px 10px;border-radius:8px}
+.cta s{opacity:.55;text-decoration-thickness:2px;margin-right:-6px}
+.push{font:italic 700 22px/1.3 "Cormorant Garamond",serif;color:var(--goldl);margin:16px 0 0}
+.phone{position:relative;max-width:320px;margin:0 auto;border-radius:34px;overflow:hidden;border:8px solid #2a1d20;box-shadow:0 30px 80px rgba(0,0,0,.65),0 0 0 1px rgba(233,180,76,.25)}
+.phone video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#120b0d}
+.phone .views{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.6);color:#fff;font:800 14px Inter;padding:5px 10px;border-radius:20px}
+/* sections */
+.sec{padding:46px 0;border-top:1px solid var(--line)}
+.sec h2{font:900 clamp(32px,7vw,54px)/.98 Inter;letter-spacing:-.035em;margin:12px 0 16px}
+.sec h2 em{font:italic 700 1.1em "Cormorant Garamond",serif;letter-spacing:-.01em;color:var(--gold)}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:10px}
+.wall figure{margin:0;position:relative}
+.wall img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;border-radius:14px;border:1px solid var(--line)}
+.wall .v{position:absolute;left:8px;top:8px;background:rgba(0,0,0,.66);color:#fff;font:800 13px Inter;padding:3px 8px;border-radius:14px}
+.wall figure:nth-child(-n+3) .v{background:var(--gold);color:var(--ink)}
+.wall figcaption{font:700 11px/1.35 "Space Mono";color:var(--muted);margin-top:8px;text-transform:uppercase;letter-spacing:.05em}
+.fine{font-size:13.5px;color:var(--muted);margin-top:14px}
+.uses{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:22px}
+.uses div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:16px}
+.uses b{display:block;font:800 18px Inter;color:#fff;margin-bottom:4px}
+.uses i{font-style:normal;font-size:22px;display:block;margin-bottom:6px}
+/* contents */
+.inside{display:grid;gap:26px}
+.toc{list-style:none;margin:0;padding:6px 20px;background:var(--paper);color:var(--ink);border-radius:16px;counter-reset:step}
+.toc li{counter-increment:step;display:grid;grid-template-columns:34px 1fr;column-gap:12px;border-bottom:1px dashed #d4c3a6;padding:12px 0;font-size:15.5px;line-height:1.4}
+.toc li:last-child{border:0}
+.toc li::before{content:counter(step);grid-row:span 2;width:30px;height:30px;border-radius:50%;background:var(--maroon);color:var(--goldl);display:grid;place-items:center;font:800 14px Inter}
+.toc b{font-family:Inter;font-weight:800}
+.toc span{color:#5c5046}
+.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-self:center}
+.pages img{width:100%;display:block;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.55)}
+.pages img:nth-child(1){transform:rotate(-2deg)}.pages img:nth-child(3){transform:rotate(2deg)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tools span{border:1px solid var(--line);background:var(--night);border-radius:30px;padding:7px 14px;font-weight:600;font-size:15px}
+/* buy */
+.ticket{display:grid;grid-template-columns:1fr auto;max-width:640px;background:var(--paper);color:var(--ink);border-radius:16px;overflow:hidden;margin:6px 0 22px}
+.ticket .l{padding:22px}
+.ticket h3{font:900 26px/1.05 Inter;margin:0 0 8px;letter-spacing:-.02em}
+.ticket ul{margin:0;padding-left:18px;font-size:15.5px}
+.ticket .r{background:var(--maroon);color:#fff;padding:22px 24px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:130px}
+.ticket .r s{font:800 24px/1 Inter;opacity:.7;text-decoration-thickness:3px;margin-bottom:4px}
+.ticket .r b{font:900 52px/1 Inter;letter-spacing:-.03em;color:var(--goldl)}
+.ticket .r small{font:700 11px "Space Mono";letter-spacing:.1em;opacity:.85;margin-top:4px}
+form{max-width:640px;background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px}
+label{display:block;font:700 12px "Space Mono";letter-spacing:.08em;text-transform:uppercase;margin:12px 0 6px;color:var(--muted)}
+input{width:100%;font:inherit;font-size:17px;padding:13px 12px;border:1px solid #4a333a;background:#0a0708;color:#fff;border-radius:10px}
+input:focus{outline:3px solid var(--gold);outline-offset:0}
+button.pay{width:100%;margin-top:18px;background:var(--gold);color:var(--ink);border:0;font:900 20px Inter;padding:16px;cursor:pointer;border-radius:12px}
+button.pay:disabled{opacity:.6}
+.err{color:#ff8a80;min-height:22px;margin-top:10px;font-weight:600}
+.mentor{display:block;max-width:640px;margin-top:14px;padding:14px 16px;border:1px dashed rgba(233,180,76,.55);border-radius:14px;text-decoration:none;font-size:15.5px}
+.mentor b{color:var(--goldl)}
+/* the "paid but didn't get it" box (resend.js) */
+#resend{max-width:640px}
+#resend .card{background:var(--night);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+#resend h2{font:800 18px Inter;color:#fff;margin:0}
+#resend .note{font-size:14.5px;color:var(--muted)}
+#resend .btn{width:100%;margin-top:12px;background:transparent;color:var(--goldl);border:1.5px solid var(--gold);font:800 17px Inter;padding:13px;border-radius:12px;cursor:pointer}
+.faq{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:10px}
+.faq div{background:var(--night);border:1px solid var(--line);border-radius:14px;padding:16px 16px 18px;font-size:15.5px}
+.faq b{display:block;font:800 17px Inter;color:#fff;margin-bottom:4px}
+footer{border-top:1px solid var(--line);padding:18px 0 40px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+footer a{margin-right:12px}
+#buy{scroll-margin-top:20px}
+@media (min-width:860px){
+  .hero{grid-template-columns:1.15fr .85fr;align-items:center;padding-top:46px}
+  .inside{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media (max-width:760px){.wall{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){body{font-size:16px}.pill{font-size:10.5px;letter-spacing:.08em}.mast{font-size:10px}.mast .hide-s{display:none}.lead{font-size:17.5px}.stats{gap:8px}.stats div{padding:10px 9px 9px}.stats small{font-size:12.5px}.ticket .r{min-width:104px;padding:18px}.ticket .r b{font-size:42px}.cta{font-size:18px;padding:14px 18px}.uses{grid-template-columns:1fr 1fr;gap:10px}.uses div{padding:13px 12px;font-size:14.5px;line-height:1.45}.uses b{font-size:15.5px}}
+</style>
 </head>
 <body>
-<main>
-  <div class="tag">@mahabharat.retold</div>
-  <h1>How to make animated mythology reels</h1>
-  <p class="lead">From choosing the story to posting it: the exact workflow behind our reels, in simple steps. No coding needed.</p>
+<div class="wrap">
+  <div class="mast mono"><span><b>PDF GUIDE</b><span class="hide-s">&nbsp; The Animated Reel Guide</span></span><span>@mahabharat.retold</span></div>
 
-  <div class="reels">
-    <img src="mg1.jpg" alt="Arjun raising his bow under a night sky, from a @mahabharat.retold reel">
-    <img src="mg2.jpg?v=2" alt="Guru Drona with his students at the archery tournament, from a @mahabharat.retold reel">
-    <img src="mg3.jpg" alt="A prince inside a golden ring of light, from a @mahabharat.retold reel">
-  </div>
-  <p class="reels-note">Frames from our reels, made with this method</p>
-  <a class="btn" href="#buy">Get the guide · <s>₹499</s> <span class="now-price">₹199</span></a>
+  <section class="hero">
+    <div>
+      <span class="pill">No coding · no drawing · 6-page PDF</span>
+      <h1>Animated reels that <span>go viral.</span></h1>
+      <p class="lead">The exact method behind <b>@mahabharat.retold</b>: from choosing the story to posting the reel, step by step. You talk to Claude in plain English or Hindi, and it draws and animates every scene.</p>
+      <div class="stats">
+        <div><b>6.4M</b><small>views in our first 18 days</small></div>
+        <div><b>2.1M</b><small>views on a single reel</small></div>
+        <div><b>3</b><small>reels past 1 million views</small></div>
+      </div>
+      <a class="cta" href="#buy">Get the guide <s>₹499</s><span class="now-price">₹199</span></a>
+      <p class="push">It's your time to start going viral on Instagram.</p>
+    </div>
+    <div class="phone"><video src="mr/hero.mp4" poster="mr/hero.jpg" autoplay muted loop playsinline aria-label="A scene from our most-watched reel"></video><span class="views">▶ 2.1M views</span></div>
+  </section>
 
-  <div class="card">
-    <h2>What's inside</h2>
-    <ol class="steps">
-      <li><b>Setup</b><span>One-time setup with the Claude app, about 15 minutes</span></li>
-      <li><b>Story and script</b><span>How to write a hook that stops the scroll</span></li>
-      <li><b>Voice-over</b><span>A natural voice with ElevenLabs</span></li>
-      <li><b>Characters, scenes and animation</b><span>With our ready-to-paste style prompt</span></li>
-      <li><b>Finish and post</b><span>Music, sound, rendering and posting</span></li>
-    </ol>
-  </div>
+  <section class="sec">
+    <span class="pill">Instagram's own numbers</span>
+    <h2>Our most-watched <em>reels</em></h2>
+    <div class="wall">
+      <figure><img src="mr/top1.jpg" alt="Asur vs Rakshas reel" loading="lazy"><span class="v">2.1M</span><figcaption>Asur vs Rakshas</figcaption></figure>
+      <figure><img src="mr/top2.jpg" alt="Abhimanyu reel" loading="lazy"><span class="v">1.5M</span><figcaption>Abhimanyu</figcaption></figure>
+      <figure><img src="mr/top3.jpg" alt="Kumbhakarna reel" loading="lazy"><span class="v">1.3M</span><figcaption>Kumbhakarna</figcaption></figure>
+      <figure><img src="mr/top4.jpg" alt="Arunasura reel" loading="lazy"><span class="v">263K</span><figcaption>Arunasura</figcaption></figure>
+      <figure><img src="mr/top5.jpg" alt="Indra vs Ravan reel" loading="lazy"><span class="v">251K</span><figcaption>Indra vs Ravan</figcaption></figure>
+      <figure><img src="mr/top6.jpg" alt="Govardhan reel" loading="lazy"><span class="v">195K</span><figcaption>Govardhan</figcaption></figure>
+    </div>
+    <p class="fine">Views as Instagram shows them on @mahabharat.retold on 13 November 2026. Our first reel went up on 26 October: 26 reels, 6.4 million views.</p>
+  </section>
 
-  <div class="card buy" id="buy">
-    <div class="buy-head">
-      <div><span class="badge">Launch price</span><h2>The Animated Reel Guide</h2><small>PDF · 6 pages · instant download</small></div>
-      <div class="price"><s>₹499</s><b class="now-price">₹199</b></div>
+  <section class="sec">
+    <span class="pill">Not only mythology</span>
+    <h2>Don't delay. <em>Tell your story</em> to the world.</h2>
+    <p class="lead">This animation style works for any story people love to watch and share. Once you know the method, you can use it for:</p>
+    <div class="uses">
+      <div><i>🏰</i><b>History and legends</b>Kings, battles and forgotten heroes, told in a minute.</div>
+      <div><i>🪔</i><b>Folk and moral stories</b>Panchatantra, Akbar–Birbal, the tales your grandparents told.</div>
+      <div><i>🌙</i><b>Kids' stories</b>Bedtime stories that children watch again and again.</div>
+      <div><i>🔥</i><b>Motivation and life lessons</b>A real story with a lesson at the end.</div>
+      <div><i>🛍️</i><b>Your brand's story</b>Explain what you make, as a story instead of an ad.</div>
+      <div><i>✍️</i><b>Your own story</b>Your journey, your city, your family, animated.</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <span class="pill">What's inside</span>
+    <h2>Six steps, <em>start to post</em></h2>
+    <div class="inside">
+      <ol class="toc">
+        <li><b>Story and script</b><span>Pick the episode, check the facts and write a first line that stops the scroll.</span></li>
+        <li><b>Voice-over</b><span>A natural Hindi voice with ElevenLabs, and the same voice in every reel.</span></li>
+        <li><b>Characters and scenes</b><span>Approve a character sheet first, so everyone looks the same in every shot.</span></li>
+        <li><b>Animation</b><span>Send the voice-over, check a still of every shot, then say "render it".</span></li>
+        <li><b>Music and sound</b><span>Background score, conch, thunder and swords, mixed at Instagram's loudness.</span></li>
+        <li><b>Render and post</b><span>Size, cover, caption, hashtags and when to post.</span></li>
+      </ol>
+      <div class="pages"><img src="mr/page1.jpg" alt="The guide's cover"><img src="mr/page2.jpg" alt="Page 3: story, script and voice-over"><img src="mr/page3.jpg" alt="Page 5: music, sound, render and post"></div>
+    </div>
+    <div class="tools"><span>Claude app (Pro plan)</span><span>ElevenLabs, free to start</span><span>Our Motion Kit, free</span><span>Mac or Windows, 8 GB RAM</span></div>
+  </section>
+
+  <section class="sec" id="buy">
+    <span class="pill">One-time · instant PDF</span>
+    <h2>Get the <em>guide</em></h2>
+    <div class="ticket">
+      <div class="l"><h3>The Animated Reel Guide</h3><ul><li>6-page PDF, simple English</li><li>One-time setup in about 15 minutes</li><li>Copy-paste messages for every step</li><li>Download right after paying</li></ul></div>
+      <div class="r"><s>₹499</s><b class="now-price">₹199</b><small>LAUNCH PRICE</small></div>
     </div>
     <form id="form" novalidate>
       <label for="name">Your name</label><input id="name" autocomplete="name" required>
-      <label for="email">Email (for your receipt and a backup copy)</label><input id="email" type="email" autocomplete="email" required>
+      <label for="email">Email (your copy of the guide)</label><input id="email" type="email" autocomplete="email" required>
       <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
-      <button class="btn" id="pay" type="submit">Buy the guide for ₹199</button>
+      <button class="pay" id="pay" type="submit">Pay ₹199 &amp; download</button>
       <div class="err" id="err"></div>
+      <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
-    <div class="trust"><span>🔒 Secure payment by Razorpay</span><span>UPI, cards, netbanking</span><span>⚡ PDF right after paying</span><span>✉️ A copy by email</span></div>
-  </div>
+    <a class="mentor" href="session.html">🎥 <b>No Claude subscription?</b> 1:1 Reel Mentorship on free tools, ₹599: book a slot →</a>
+    <div id="resend"></div>
+  </section>
 
-  <a class="btn alt" href="session.html">🎥 1:1 Reel Mentorship, ₹599: book a slot</a>
-  <div id="resend"></div>
-  <div class="small">Questions? DM us on Instagram: <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div>
-  <div class="legal"><a href="terms.html">Terms</a>·<a href="privacy.html">Privacy</a>·<a href="refund.html">Refund</a>·<a href="contact.html">Contact</a></div>
-</main>
+  <section class="sec">
+    <span class="pill">Questions</span>
+    <h2>Before you <em>buy</em></h2>
+    <div class="faq">
+      <div><b>I can't code or draw. Can I do this?</b>Yes. You never type code. You talk to Claude in plain English or Hindi, look at the result and say what to change.</div>
+      <div><b>What do I need?</b>The Claude app with the paid Claude Pro plan, ElevenLabs (start on the free plan), our free Motion Kit, and a Mac or Windows computer with 8 GB of RAM.</div>
+      <div><b>No Claude subscription?</b>The guide has an easy start with ChatGPT and CapCut, or book the 1:1 mentorship: we set you up on free tools and make 5 reels together.</div>
+      <div><b>Will I also get millions of views?</b>Nobody can promise views. This is the exact method behind the numbers above; results depend on your stories and on posting regularly.</div>
+    </div>
+  </section>
+
+  <footer class="mono"><div><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund</a><a href="contact.html">Contact</a></div><div>Questions? DM <a href="https://www.instagram.com/mahabharat.retold/">@mahabharat.retold</a></div></footer>
+</div>
 <script src="config.js"></script>
 <script src="resend.js" defer></script>
 <script src="count.js" data-page="guide"></script>
@@ -64,7 +209,7 @@
   function show(rupees) {
     price = rupees;
     document.querySelectorAll(".now-price").forEach((el) => { el.textContent = "₹" + rupees; });
-    $("pay").textContent = "Buy the guide for ₹" + rupees;
+    $("pay").textContent = "Pay ₹" + rupees + " & download";
   }
   fetch(S.api + "?action=config").then((r) => r.json()).then((c) => { if (c.guidePrice) show(c.guidePrice); }).catch(() => {});
   $("form").addEventListener("submit", async (e) => {
@@ -76,7 +221,7 @@
       if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
       location.href = d.url;
     } catch (x) {
-      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Buy the guide for ₹" + price;
+      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹" + price + " & download";
     }
   });
 })();
