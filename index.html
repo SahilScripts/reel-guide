@@ -80,10 +80,8 @@ input:focus{outline:3px solid var(--gold);outline-offset:0}
 button.pay{width:100%;margin-top:18px;background:var(--gold);color:var(--ink);border:0;font:900 20px Inter;padding:16px;cursor:pointer;border-radius:12px}
 button.pay:disabled{opacity:.6}
 .err{color:#ff8a80;min-height:22px;margin-top:10px;font-weight:600}
-.mentor{display:block;max-width:640px;margin-top:14px;padding:14px 16px;border:1px dashed rgba(233,180,76,.55);border-radius:14px;text-decoration:none;font-size:15.5px}
-.mentor b{color:var(--goldl)}
 /* the "paid but didn't get it" box (resend.js) */
-#resend{max-width:640px}
+#resend{max-width:640px;margin-top:14px}
 #resend .card{background:var(--night);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
 #resend h2{font:800 18px Inter;color:#fff;margin:0}
 #resend .note{font-size:14.5px;color:var(--muted)}
@@ -178,7 +176,6 @@ footer a{margin-right:12px}
       <div class="err" id="err"></div>
       <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
-    <a class="mentor" href="session.html">🎥 <b>1:1 Reel Mentorship</b>, ₹599: book a slot →</a>
     <div id="resend"></div>
   </section>
 
