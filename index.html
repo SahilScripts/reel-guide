@@ -42,14 +42,9 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .sec{padding:46px 0;border-top:1px solid var(--line)}
 .sec h2{font:900 clamp(32px,7vw,54px)/.98 Inter;letter-spacing:-.035em;margin:12px 0 16px}
 .sec h2 em{font:italic 700 1.1em "Cormorant Garamond",serif;letter-spacing:-.01em;color:var(--gold)}
-.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px;max-width:760px}
-.wall figure{margin:0;position:relative}
-.wall img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;border-radius:14px;border:1px solid var(--line)}
-.wall .v{position:absolute;left:10px;top:10px;background:var(--gold);color:var(--ink);font:900 clamp(13px,2.4vw,18px) Inter;padding:4px 10px;border-radius:16px}
-.wall figcaption{font:700 11px/1.35 "Space Mono";color:var(--muted);margin-top:8px;text-transform:uppercase;letter-spacing:.05em}
 .fine{font-size:13.5px;color:var(--muted);margin-top:14px}
 /* the guide as a product: a 3D book with tags */
-.product{display:grid;gap:34px;align-items:center}
+.product{padding-top:20px}
 .pack{position:relative;display:flex;justify-content:center;padding:26px 0 34px;perspective:1400px}
 .pack::after{content:"";position:absolute;left:18%;right:18%;bottom:14px;height:26px;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent);filter:blur(4px)}
 .book{position:relative;width:min(62vw,270px);aspect-ratio:210/297;transform:rotateY(-24deg) rotateX(5deg) rotateZ(-1deg);transform-style:preserve-3d}
@@ -57,13 +52,8 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .book::before{content:"";position:absolute;top:5px;bottom:5px;right:-14px;width:16px;border-radius:0 4px 4px 0;background:repeating-linear-gradient(90deg,#f6ecd9 0 2px,#d8c6a6 2px 3px);transform:rotateY(60deg);transform-origin:left}
 .book::after{content:"";position:absolute;inset:0;border-radius:3px 8px 8px 3px;box-shadow:24px 28px 50px rgba(0,0,0,.6);z-index:1}
 .chip{position:absolute;z-index:3;background:var(--paper);color:var(--ink);font:800 13px Inter;padding:7px 12px;border-radius:30px;box-shadow:0 10px 24px rgba(0,0,0,.45);white-space:nowrap}
-.chip.a{top:10px;left:4%;transform:rotate(-6deg)}
-.chip.b{top:42%;right:2%;background:var(--gold);transform:rotate(5deg)}
-.chip.c{bottom:30px;left:8%;background:#25d366;color:#fff;transform:rotate(-3deg)}
-.product .lead{margin-top:0}
-.ticks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
-.ticks li{display:grid;grid-template-columns:26px 1fr;gap:10px;font-size:16.5px;align-items:start}
-.ticks li::before{content:"✓";width:24px;height:24px;border-radius:50%;background:var(--maroon);color:var(--goldl);display:grid;place-items:center;font:900 13px Inter;margin-top:2px}
+.chip.b{top:38%;right:calc(50% - 230px);background:var(--gold);transform:rotate(5deg)}
+.chip.c{bottom:34px;left:calc(50% - 220px);background:#25d366;color:#fff;transform:rotate(-3deg)}
 /* what's inside */
 .toc{list-style:none;margin:0;padding:6px 20px;background:var(--paper);color:var(--ink);border-radius:16px;counter-reset:step;max-width:760px}
 .toc li{counter-increment:step;display:grid;grid-template-columns:34px 1fr;column-gap:12px;border-bottom:1px dashed #d4c3a6;padding:12px 0;font-size:15.5px;line-height:1.4}
@@ -71,6 +61,9 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .toc li::before{content:counter(step);grid-row:span 2;width:30px;height:30px;border-radius:50%;background:var(--maroon);color:var(--goldl);display:grid;place-items:center;font:800 14px Inter}
 .toc b{font-family:Inter;font-weight:800}
 .toc span{color:#5c5046}
+.kit{max-width:760px;margin-top:14px;background:linear-gradient(135deg,var(--maroon),#4a0f1a);border:1px solid rgba(233,180,76,.55);border-radius:16px;padding:18px 20px;font-size:16px;color:#eadfcb}
+.kit b{display:block;font:900 24px/1.1 Inter;color:var(--goldl);margin:6px 0 6px;letter-spacing:-.02em}
+.kit .tag{font:700 11px "Space Mono";letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 /* buy */
 .ticket{position:relative;display:grid;grid-template-columns:1fr auto;max-width:640px;color:var(--ink);margin:22px 0 22px}
 .ticket .l{padding:22px;background:var(--paper);border-radius:16px 0 0 16px}
@@ -83,6 +76,12 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 /* WhatsApp support: a round sticker tucked over the price's top corner */
 .wa{position:absolute;top:-30px;right:-16px;width:96px;height:96px;border-radius:50%;background:#25d366;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center;font:800 9.5px/1.15 Inter;letter-spacing:.04em;text-transform:uppercase;transform:rotate(-10deg);box-shadow:0 10px 24px rgba(0,0,0,.45);border:3px solid #fff}
 .wa svg{width:24px;height:24px}
+.timer{max-width:640px;margin:0 0 18px;background:var(--night);border:1px dashed rgba(233,180,76,.6);border-radius:16px;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px}
+.timer span{font-size:16px}.timer b{color:var(--goldl)}
+.timer .cells{display:flex;gap:6px}
+.timer .cells div{background:var(--maroon);color:var(--goldl);min-width:52px;text-align:center;padding:7px 4px 5px;border-radius:10px;font:700 22px/1 "Space Mono",monospace}
+.timer .cells small{display:block;font:700 9px "Space Mono";color:var(--paper);opacity:.75;margin-top:4px;letter-spacing:.1em}
+.details{font:800 20px Inter;margin:2px 0 4px;color:#fff}
 form{max-width:640px;background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px}
 label{display:block;font:700 12px "Space Mono";letter-spacing:.08em;text-transform:uppercase;margin:12px 0 6px;color:var(--muted)}
 input{width:100%;font:inherit;font-size:17px;padding:13px 12px;border:1px solid #4a333a;background:#0a0708;color:#fff;border-radius:10px}
@@ -93,13 +92,17 @@ button.pay:disabled{opacity:.6}
 footer{border-top:1px solid var(--line);padding:18px 0 40px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 footer a{margin-right:12px}
 .hidden{display:none!important}
+/* The word OFFER, highlighted wherever it appears */
+.hl{background:#ff3b30;color:#fff;font:900 .82em/1 Inter;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px 2px;border-radius:6px;animation:hl 1.6s ease-in-out infinite}
+.ticket .hl{background:var(--goldl);color:var(--ink)}
+@keyframes hl{50%{box-shadow:0 0 0 5px rgba(255,59,48,.28)}}
+@media (prefers-reduced-motion:reduce){.hl{animation:none}}
 #buy{scroll-margin-top:20px}
 @media (min-width:621px){.wa{top:-48px;right:-44px}.ticket .r{padding-top:40px;min-width:150px}}
 @media (min-width:860px){
   .hero{grid-template-columns:1.15fr .85fr;align-items:center;padding-top:46px}
-  .product{grid-template-columns:.9fr 1.1fr}
 }
-@media (max-width:620px){.wa{width:84px;height:84px;top:-26px;right:-6px;font-size:8.5px}.wa svg{width:20px;height:20px}body{font-size:16px}.pill{font-size:10.5px;letter-spacing:.08em}.mast{font-size:10px}.mast .hide-s{display:none}.lead{font-size:17.5px}.stats{gap:8px}.stats div{padding:10px 9px 9px}.stats small{font-size:12.5px}.ticket .r{min-width:104px;padding:18px}.ticket .r b{font-size:42px}.cta{font-size:18px;padding:14px 18px}.chip{font-size:11.5px;padding:6px 10px}}
+@media (max-width:620px){.chip.b{right:4%;top:58%}.chip.c{left:6%}.timer .cells div{min-width:44px;font-size:19px}.wa{width:84px;height:84px;top:-26px;right:-6px;font-size:8.5px}.wa svg{width:20px;height:20px}body{font-size:16px}.pill{font-size:10.5px;letter-spacing:.08em}.mast{font-size:10px}.mast .hide-s{display:none}.lead{font-size:17.5px}.stats{gap:8px}.stats div{padding:10px 9px 9px}.stats small{font-size:12.5px}.ticket .r{min-width:104px;padding:18px}.ticket .r b{font-size:42px}.cta{font-size:18px;padding:14px 18px}.chip{font-size:11.5px;padding:6px 10px}}
 </style>
 </head>
 <body>
@@ -116,41 +119,17 @@ footer a{margin-right:12px}
         <div><b>2.1M</b><small>views on a single reel</small></div>
       </div>
       <a class="cta" href="#buy">Get the guide <s>₹499</s><span class="now-price">₹99</span></a>
-      <div class="offer" id="offer">🔥 <b>3-day offer: ₹99</b> ends in <span class="tmr" id="tmr">--</span></div>
+      <div class="offer" id="offer">🔥 <b>3-day <mark class="hl">offer</mark> ₹99</b> ends in <span class="tmr" id="tmr">--</span></div>
       <p class="push">It's your time to go viral on Instagram.</p>
     </div>
     <div class="phone"><video src="mr/hero.mp4" poster="mr/hero.jpg" autoplay muted loop playsinline aria-label="A scene from our most-watched reel"></video><span class="views">▶ 2.1M views</span></div>
   </section>
 
-  <section class="sec">
-    <span class="pill">Instagram's own numbers</span>
-    <h2>Our most-watched <em>reels</em></h2>
-    <div class="wall">
-      <figure><img src="mr/top1.jpg" alt="Asur vs Rakshas reel" loading="lazy"><span class="v">2.1M</span><figcaption>Asur vs Rakshas</figcaption></figure>
-      <figure><img src="mr/top2.jpg" alt="Abhimanyu reel" loading="lazy"><span class="v">1.5M</span><figcaption>Abhimanyu</figcaption></figure>
-      <figure><img src="mr/top3.jpg" alt="Kumbhakarna reel" loading="lazy"><span class="v">1.3M</span><figcaption>Kumbhakarna</figcaption></figure>
-    </div>
-    <p class="fine">Views as Instagram shows them on @mahabharat.retold on 13 November 2026. Our first reel went up on 26 October: 26 reels, 6.4 million views.</p>
-  </section>
-
   <section class="sec product">
     <div class="pack">
-      <span class="chip a">📄 7 pages</span>
       <div class="book"><img src="mr/cover.jpg" alt="The guide's cover: How to make animated mythology reels"></div>
       <span class="chip b">⚡ Instant download</span>
       <span class="chip c">💬 WhatsApp support</span>
-    </div>
-    <div>
-      <span class="pill">The guide</span>
-      <h2>Your shortcut to <em>viral reels</em></h2>
-      <p class="lead">Everything we do to make a reel, in one short PDF. Read it once, follow it step by step, and post your first animated reel.</p>
-      <ul class="ticks">
-        <li>The exact method behind 6.4M views</li>
-        <li>Our ready-made animation kit, free with the guide</li>
-        <li>Copy-paste messages for every step</li>
-        <li>No coding, no drawing, no video editing</li>
-        <li>WhatsApp support if you get stuck</li>
-      </ul>
     </div>
   </section>
 
@@ -165,21 +144,24 @@ footer a{margin-right:12px}
       <li><b>Music and sound</b><span>Background score, conch, thunder and swords, mixed at the loudness reels need.</span></li>
       <li><b>Render and post</b><span>Size, cover, caption, hashtags and when to post.</span></li>
     </ol>
+    <div class="kit"><span class="tag">Included free</span><b>The Motion Graphic Kit</b>Our ready-made animation kit: the painted characters with natural hands, palaces and battlefields, music and sound effects. Every reel comes out in our style.</div>
   </section>
 
   <section class="sec" id="buy">
     <span class="pill">One-time · instant PDF</span>
     <h2>Get the <em>guide</em></h2>
     <div class="ticket">
-      <div class="l"><h3>The Animated Reel Guide</h3><ul><li>7-page PDF, simple English</li><li>Our animation kit included</li><li>Copy-paste messages for every step</li><li>Download right after paying</li></ul></div>
-      <div class="r"><s>₹499</s><b class="now-price">₹99</b><small id="label">3-DAY OFFER</small></div>
+      <div class="l"><h3>The Animated Reel Guide</h3><ul><li>7-page PDF, simple English</li><li>The Motion Graphic Kit included</li><li>Copy-paste messages for every step</li><li>Download right after paying</li></ul></div>
+      <div class="r"><s>₹499</s><b class="now-price">₹99</b><small id="label">3-DAY <mark class="hl">OFFER</mark></small></div>
       <div class="wa" role="note" aria-label="WhatsApp support available"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="#fff" stroke-width="1.8" d="M12 2.6a9.4 9.4 0 0 0-8.1 14.2L2.6 21.4l4.7-1.2A9.4 9.4 0 1 0 12 2.6z"/><path fill="#fff" d="M9.2 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.9 4.5 4 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.4v-.5l-.8-2z"/></svg>WhatsApp<br>support<br>available</div>
     </div>
+    <div class="timer" id="timer"><span>🔥 3-day <mark class="hl">offer</mark> <b class="now-price">₹99</b> · ends in</span><div class="cells" id="cells"></div></div>
     <form id="form" novalidate>
+      <h3 class="details">Your details</h3>
       <label for="name">Your name</label><input id="name" autocomplete="name" required>
       <label for="email">Email (your copy of the guide)</label><input id="email" type="email" autocomplete="email" required>
       <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
-      <button class="pay" id="pay" type="submit">Pay ₹99 &amp; download</button>
+      <button class="pay" id="pay" type="submit">Pay now · ₹99</button>
       <div class="err" id="err"></div>
       <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
@@ -198,15 +180,18 @@ footer a{margin-right:12px}
   function show(rupees, offer) {
     price = rupees;
     document.querySelectorAll(".now-price").forEach((el) => { el.textContent = "₹" + rupees; });
-    $("pay").textContent = "Pay ₹" + rupees + " & download";
-    $("label").textContent = offer ? "3-DAY OFFER" : "LAUNCH PRICE";
+    $("pay").textContent = "Pay now · ₹" + rupees;
+    $("label").innerHTML = offer ? '3-DAY <mark class="hl">OFFER</mark>' : "LAUNCH PRICE";
     $("offer").classList.toggle("hidden", !offer);
+    $("timer").classList.toggle("hidden", !offer);
   }
   function tick() {
     const left = end - (Date.now() + skew);
     if (left <= 0) { show(S.guideFull, false); return; }
     const t = Math.floor(left / 1000), d = Math.floor(t / 86400);
-    $("tmr").textContent = (d ? d + "d " : "") + pad(Math.floor(t / 3600) % 24) + "h " + pad(Math.floor(t / 60) % 60) + "m " + pad(t % 60) + "s";
+    const h = Math.floor(t / 3600) % 24, m = Math.floor(t / 60) % 60, sec = t % 60;
+    $("tmr").textContent = (d ? d + "d " : "") + pad(h) + "h " + pad(m) + "m " + pad(sec) + "s";
+    $("cells").innerHTML = [[d, "DAYS"], [h, "HRS"], [m, "MIN"], [sec, "SEC"]].map(([v, l]) => `<div>${pad(v)}<small>${l}</small></div>`).join("");
     if (price !== S.guideOffer) show(S.guideOffer, true);
     setTimeout(tick, 1000);
   }
@@ -225,7 +210,7 @@ footer a{margin-right:12px}
       if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
       location.href = d.url;
     } catch (x) {
-      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹" + price + " & download";
+      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay now · ₹" + price;
     }
   });
 })();
