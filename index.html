@@ -61,9 +61,6 @@ h1 span{font:italic 700 1.08em/.9 "Cormorant Garamond",serif;letter-spacing:-.01
 .toc li::before{content:counter(step);grid-row:span 2;width:30px;height:30px;border-radius:50%;background:var(--maroon);color:var(--goldl);display:grid;place-items:center;font:800 14px Inter}
 .toc b{font-family:Inter;font-weight:800}
 .toc span{color:#5c5046}
-.kit{max-width:760px;margin-top:14px;background:linear-gradient(135deg,var(--maroon),#4a0f1a);border:1px solid rgba(233,180,76,.55);border-radius:16px;padding:18px 20px;font-size:16px;color:#eadfcb}
-.kit b{display:block;font:900 24px/1.1 Inter;color:var(--goldl);margin:6px 0 6px;letter-spacing:-.02em}
-.kit .tag{font:700 11px "Space Mono";letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 /* buy */
 .ticket{position:relative;display:grid;grid-template-columns:1fr auto;max-width:640px;color:var(--ink);margin:22px 0 22px}
 .ticket .l{padding:22px;background:var(--paper);border-radius:16px 0 0 16px}
@@ -140,11 +137,10 @@ footer a{margin-right:12px}
       <li><b>Story and script</b><span>Pick the episode, check the facts and write a first line that stops the scroll.</span></li>
       <li><b>Voice-over</b><span>A natural Hindi AI voice, and the same voice in every reel.</span></li>
       <li><b>Characters and scenes</b><span>Approve a character sheet first, so everyone looks the same in every shot.</span></li>
-      <li><b>Animation</b><span>Turn the voice-over into a moving reel, and check a still of every shot before it renders.</span></li>
+      <li><b>Motion Graphic Kit</b><span>Our ready-made kit turns the voice-over into a moving reel: painted characters, palaces and battlefields, music and sound effects, in our style.</span></li>
       <li><b>Music and sound</b><span>Background score, conch, thunder and swords, mixed at the loudness reels need.</span></li>
       <li><b>Render and post</b><span>Size, cover, caption, hashtags and when to post.</span></li>
     </ol>
-    <div class="kit"><span class="tag">Included free</span><b>The Motion Graphic Kit</b>Our ready-made animation kit: the painted characters with natural hands, palaces and battlefields, music and sound effects. Every reel comes out in our style.</div>
   </section>
 
   <section class="sec" id="buy">
@@ -161,7 +157,7 @@ footer a{margin-right:12px}
       <label for="name">Your name</label><input id="name" autocomplete="name" required>
       <label for="email">Email (your copy of the guide)</label><input id="email" type="email" autocomplete="email" required>
       <label for="phone">Mobile number</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 digits" required>
-      <button class="pay" id="pay" type="submit">Pay now · ₹99</button>
+      <button class="pay" id="pay" type="submit">Pay ₹99 &amp; download</button>
       <div class="err" id="err"></div>
       <p class="fine">Secure payment by Razorpay: UPI, cards or netbanking. The PDF downloads on the next page, and a copy is emailed to you.</p>
     </form>
@@ -180,7 +176,7 @@ footer a{margin-right:12px}
   function show(rupees, offer) {
     price = rupees;
     document.querySelectorAll(".now-price").forEach((el) => { el.textContent = "₹" + rupees; });
-    $("pay").textContent = "Pay now · ₹" + rupees;
+    $("pay").textContent = "Pay ₹" + rupees + " & download";
     $("label").innerHTML = offer ? '3-DAY <mark class="hl">OFFER</mark>' : "LAUNCH PRICE";
     $("offer").classList.toggle("hidden", !offer);
     $("timer").classList.toggle("hidden", !offer);
@@ -210,7 +206,7 @@ footer a{margin-right:12px}
       if (!d.url) throw new Error(d.error || "Something went wrong. Please try again.");
       location.href = d.url;
     } catch (x) {
-      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay now · ₹" + price;
+      $("err").textContent = x.message; $("pay").disabled = false; $("pay").textContent = "Pay ₹" + price + " & download";
     }
   });
 })();
