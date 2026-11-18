@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Twist Tale voice-over script: two brothers, a three-foot door and a latch on one side.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Darwaza Itna Neecha Kyun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+  /* Layout: one reading column, like a voice-over script on a stand; story sections marked in the margin label above each block. */
+  :root {
+    --bg: #f1f2f6;
+    --paper: #ffffff;
+    --fg: #1b1e2a;
+    --muted: #5c6276;
+    --rule: #d9dbe5;
+    --accent: #2f3b8f;
+    --gold: #a8740f;
+    --gold-bg: #fbf1d6;
+    --display: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
+    --body: "Mukta", "Noto Sans Devanagari", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11131a; --paper: #181b25; --fg: #e7e8ef; --muted: #9ba1b5; --rule: #2b2f3d;
+      --accent: #9aa6ff; --gold: #f0c14d; --gold-bg: #2e2715; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #11131a; --paper: #181b25; --fg: #e7e8ef; --muted: #9ba1b5; --rule: #2b2f3d;
+    --accent: #9aa6ff; --gold: #f0c14d; --gold-bg: #2e2715; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 17px;
+    padding-block: 32px 56px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 680px; margin: 0 auto; display: grid; gap: 28px; }
+
+  header { display: grid; gap: 10px; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  h1 { font-family: var(--body); font-weight: 700; font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0; text-wrap: balance; }
+  h1 .hl { color: var(--gold); }
+  .meta { color: var(--muted); font-size: 14px; }
+  .alts { font-size: 15px; color: var(--muted); }
+  .alts b { color: var(--fg); font-weight: 500; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  button {
+    font: inherit; font-size: 15px; font-weight: 500;
+    padding: 8px 16px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: var(--paper);
+  }
+  button.ghost { background: transparent; color: var(--accent); }
+  button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+  .script { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 8px 24px 24px; }
+  section { padding-top: 20px; }
+  section + section { border-top: 1px solid var(--rule); margin-top: 16px; }
+  h2 { font-family: var(--body); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; font-weight: 700; }
+  p.line { font-family: var(--display); font-size: 21px; line-height: 1.9; margin: 0 0 6px; }
+  p.line.open { font-size: 24px; }
+  .q { color: var(--accent); }
+
+  .caption { background: var(--gold-bg); border-radius: 12px; padding: 16px 20px; display: grid; gap: 6px; }
+  .caption .label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .caption p { margin: 0; font-size: 18px; }
+
+  .toast { min-height: 1.4em; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 480px) {
+    .script { padding: 4px 16px 18px; }
+    p.line { font-size: 19px; }
+    p.line.open { font-size: 21px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Twist Tale · voice-over script</span>
+    <h1>Darwaza itna <span class="hl">neecha</span><br>kyun tha? ❤️‍🩹</h1>
+    <div class="alts">Other titles: <b>Pehle kaun / jhukega? 🫵🏻</b> · <b>12 saal ki / dastak ❤️‍🩹</b></div>
+    <div class="meta">262 words · about 95 seconds</div>
+    <div class="actions">
+      <button type="button" id="copyScript">Copy script</button>
+      <button type="button" class="ghost" id="copyCaption">Copy caption</button>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </header>
+
+  <article class="script" id="script">
+    <section>
+      <h2>Opening line</h2>
+      <p class="line open"><span class="q">"मेरी चौखट पर कदम मत रखना,"</span> बड़े भाई ने कहा… और छोटे ने बारह साल तक सच में कदम नहीं रखा।</p>
+    </section>
+
+    <section>
+      <h2>The quarrel and the door</h2>
+      <p class="line">जापान के एक गाँव में, झगड़ा बाप की समुराई तलवार का था, जो बड़े को नहीं, छोटे को मिली थी।</p>
+      <p class="line">दोनों के घरों के बीच, बाप का बनवाया एक दरवाज़ा था। तीन फुट ऊँचा… और कुंडी सिर्फ़ बड़े की तरफ़।</p>
+      <p class="line">हिसाब साफ़ था। गलती छोटे की, तो झुकेगा भी वही। दरवाज़ा नीचा था ही इसलिए।</p>
+    </section>
+
+    <section>
+      <h2>Twelve years of knocking</h2>
+      <p class="line">फिर एक रात, उस दरवाज़े पर दस्तक हुई। धीमी… नीचे से। फिर हर रात।</p>
+      <p class="line">बड़ा भाई करवट बदल लेता। <span class="q">"माफ़ी तक नहीं माँगता… चाहता है, मैं झुकूँ?"</span></p>
+      <p class="line">पत्नी बोली, <span class="q">"खोल क्यों नहीं देते?"</span> जवाब मिला, <span class="q">"बड़ा मैं हूँ।"</span></p>
+      <p class="line">पाँच साल… दस साल… दस्तक धीमी होती गई।</p>
+    </section>
+
+    <section>
+      <h2>The turn</h2>
+      <p class="line">और बारहवें साल, एक रात… दस्तक नहीं हुई।</p>
+      <p class="line">उस खामोशी ने उसे बारह साल की दस्तकों से ज़्यादा डरा दिया।</p>
+      <p class="line">पहली बार वो झुका… और कुंडी खोली।</p>
+      <p class="line">उस पार, चटाई पर घुटनों के दो गहरे निशान थे।</p>
+      <p class="line">छोटा भाई बारह साल से, हर रात यहीं घुटनों पर दस्तक देता था।</p>
+      <p class="line">आज वो बुखार में पड़ा था। सिरहाने वही तलवार… <span class="q">"भैया के लिए।"</span></p>
+      <p class="line">उस रात दोनों भाई घुटनों पर थे… और पहली बार, बराबर।</p>
+      <p class="line">कुंडी उसकी तरफ़ इसलिए थी… क्योंकि झुकना उसी को सीखना था।</p>
+    </section>
+
+    <section>
+      <h2>Mirror</h2>
+      <p class="line">हम भी भाई को फ़ोन नहीं करते, दोस्त का मैसेज seen पर छोड़ देते हैं… सोच कर, कि पहले वो झुकेगा।</p>
+      <p class="line">पर अक्सर वो सालों से दस्तक दे रहा होता है… कुंडी बस हमारी तरफ़ होती है।</p>
+    </section>
+
+    <section>
+      <h2>Closer</h2>
+      <p class="line">झुकने से कद छोटा नहीं होता, बस दरवाज़ा खुल जाता है।</p>
+      <p class="line">सच बताना… तुम्हारी कुंडी किसके लिए बंद है?</p>
+    </section>
+  </article>
+
+  <div class="caption">
+    <span class="label">Post caption</span>
+    <p id="caption">Ye reel us insaan ko bhejo, jiske liye tumhari kundi band hai ❤️‍🩹</p>
+  </div>
+</div>
+
+<script>
+  const toast = (text) => { document.getElementById("toast").textContent = text; };
+  async function copy(text, done) {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast(done);
+    } catch (error) {
+      toast("Copy didn't work here. Select the text and copy it yourself.");
+    }
+  }
+  document.getElementById("copyScript").addEventListener("click", () => {
+    const lines = [...document.querySelectorAll("#script p.line")].map((line) => line.textContent.trim());
+    copy(lines.join("\n"), "Script copied");
+  });
+  document.getElementById("copyCaption").addEventListener("click", () => {
+    copy(document.getElementById("caption").textContent.trim(), "Caption copied");
+  });
+</script>
+</body>
+</html>
